@@ -1,0 +1,29 @@
+# LinTech Web Solutions
+
+## About
+LinTech Web Solutions is a premier web design and development agency based in Nairobi, Kenya. We specialize in building high-performance, visually stunning websites and custom software solutions for businesses globally.
+
+## Services
+- **Web Design & Development**: Custom websites using Next.js, React, and Tailwind CSS.
+- **E-Commerce Solutions**: Online stores with secure payment integrations (M-Pesa, Stripe).
+- **SEO Optimization**: Technical and content SEO to improve search rankings.
+- **System Development**: Custom web applications and management systems.
+- **Mobile App Development**: Cross-platform mobile applications.
+
+## Contact Information
+- **Website**: https://lintechwebsolutions.co.ke
+- **Location**: Nairobi, Kenya
+- **Phone**: +254 797 967 839
+- **Email**: contact@lintechwebsolutions.co.ke
+
+## Technical Stack
+We utilize modern, scalable technologies including:
+- Frontend: Next.js, React, TypeScript, Tailwind CSS
+- Backend: Node.js, Python, Supabase
+- Deployment: Vercel, AWS
+
+## Architecture & Navigation
+- `/`: Home Page (Overview, Services, Portfolio)
+- `/#services`: Detailed list of services
+- `/#portfolio`: Case studies and past projects
+- `/#contact`: Contact form and details
