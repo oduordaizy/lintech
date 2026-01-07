@@ -1,23 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  fallback: ["system-ui", "arial"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "LinTech Web Solutions | Best Website Designers in Kenya",
-    template: "%s | LinTech Web Solutions"
+    default: "Lintech Web Solutions | Best Website Designers in Kenya",
+    template: "%s | Lintech Web Solutions"
   },
-  description: "LinTech Web Solutions offers premium web design and development services in Kenya. We build stunning, high-performance websites for businesses. Rated as top website designers in Nairobi.",
+  description: "Lintech Web Solutions offers premium web design and development services in Kenya. We build stunning, high-performance websites for businesses. Rated as top website designers in Nairobi.",
   keywords: [
     "website designers in kenya",
     "web design company in kenya",
@@ -26,11 +23,11 @@ export const metadata: Metadata = {
     "ecommerce website design kenya",
     "mobile app development kenya",
     "software development company nairobi",
-    "LinTech Web Solutions"
+    "Lintech Web Solutions"
   ],
-  authors: [{ name: "LinTech Web Solutions" }],
-  creator: "LinTech Web Solutions",
-  publisher: "LinTech Web Solutions",
+  authors: [{ name: "Lintech Web Solutions" }],
+  creator: "Lintech Web Solutions",
+  publisher: "Lintech Web Solutions",
   formatDetection: {
     email: false,
     address: false,
@@ -41,10 +38,10 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "LinTech Web Solutions | Best Website Designers in Kenya",
-    description: "Transform your business with world-class web design and development from LinTech. We are the leading digital agency in Kenya.",
+    title: "Lintech Web Solutions | Best Website Designers in Kenya",
+    description: "Transform your business with world-class web design and development from Lintech. We are the leading digital agency in Kenya.",
     url: "https://lintechwebsolutions.co.ke",
-    siteName: "LinTech Web Solutions",
+    siteName: "Lintech Web Solutions",
     locale: "en_KE",
     type: "website",
     images: [
@@ -52,14 +49,14 @@ export const metadata: Metadata = {
         url: "/og-image.jpg", // Needs to be created or mapped
         width: 1200,
         height: 630,
-        alt: "LinTech Web Solutions Showcase",
+        alt: "Lintech Web Solutions Showcase",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LinTech Web Solutions | Top Web Designers Kenya",
-    description: "Expert web design and development services in Kenya. Build your digital presence with LinTech.",
+    title: "Lintech Web Solutions | Top Web Designers Kenya",
+    description: "Expert web design and development services in Kenya. Build your digital presence with Lintech.",
     images: ["/og-image.jpg"], // Needs to be created or mapped
     creator: "@lintech", // Replace if available
   },
@@ -74,6 +71,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -84,7 +85,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} font-sans antialiased`}
       >
         <script
           type="application/ld+json"

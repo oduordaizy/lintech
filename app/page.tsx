@@ -1,11 +1,13 @@
 import { Navbar } from "@/components/navbar"
-import { Hero } from "@/components/hero"
+import Hero from "@/components/hero"
 import { About } from "@/components/about"
-import { Features } from "@/components/features"
-import { Portfolio } from "@/components/portfolio"
+import Features from "@/components/features"
+import Portfolio from "@/components/portfolio"
+import { Testimonials } from "@/components/testimonials"
 import { Faq } from "@/components/faq"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { WhyUs } from "@/components/why-us"
 
 export default function Home() {
   return (
@@ -16,9 +18,9 @@ export default function Home() {
 
       <Navbar />
       <Hero />
-      <About />
       <Features />
-      <Portfolio />
+      <WhyUs />
+      <About />
       <Faq />
       <Contact />
       <Footer />

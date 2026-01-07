@@ -30,11 +30,11 @@ export function Faq() {
     ]
 
     return (
-        <section id="faq" className="container py-20 px-4 md:px-8 max-w-screen-2xl bg-muted/20">
-            <div className="max-w-3xl mx-auto space-y-8">
+        <section id="faq" className="container py-20 md:py-28 px-4 md:px-8 max-w-screen-2xl bg-muted/20">
+            <div className="max-w-3xl mx-auto space-y-8 md:space-y-10">
                 <div className="text-center space-y-4">
-                    <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Frequently Asked Questions</h2>
-                    <p className="text-muted-foreground text-lg">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Frequently Asked Questions</h2>
+                    <p className="text-muted-foreground text-base md:text-lg lg:text-xl">
                         Got questions? We've got answers. Here's everything you need to know about our process.
                     </p>
                 </div>

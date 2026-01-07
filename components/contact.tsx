@@ -5,11 +5,11 @@ import { Label } from "@/components/ui/label"
 
 export function Contact() {
     return (
-        <section id="contact" className="container py-20 px-4 md:px-8 max-w-screen-2xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <section id="contact" className="container py-20 md:py-28 px-4 md:px-8 max-w-screen-2xl">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                 <div className="space-y-6">
-                    <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Let's Work Together</h2>
-                    <p className="text-muted-foreground text-lg">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Let's Work Together</h2>
+                    <p className="text-muted-foreground text-base md:text-lg">
                         Ready to start your next project? Fill out the form below or send us an email, and we'll get back to you within 24 hours.
                     </p>
                     <div className="space-y-4 pt-4">

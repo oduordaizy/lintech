@@ -6,20 +6,20 @@ import Image from "next/image"
 
 export function Navbar() {
     const links = [
-        { href: "#home", label: "Home" },
+        { href: "/", label: "Home" },
         { href: "#about", label: "About" },
         { href: "#services", label: "Services" },
-        { href: "#portfolio", label: "Portfolio" },
+        { href: "/pricing", label: "Pricing" },
         { href: "#contact", label: "Contact" },
     ]
 
     return (
-        <nav className="fixed top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <nav className="fixed top-2 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-14 max-w-screen-2xl items-center justify-between px-4 md:px-8">
                 <Link href="/" className="flex items-center space-x-2">
                     <Image src="/logo.png" alt="Logo" width={40} height={40} />
-                    <span className="font-bold sm:inline-block hidden">LinTech Web Solutions</span>
-                    <span className="font-bold inline-block sm:hidden">LinTech Web Solutions</span>
+                    <span className="font-bold sm:inline-block hidden">Lintech Web Solutions</span>
+                    <span className="font-bold inline-block sm:hidden">Lintech Web Solutions</span>
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -35,7 +35,7 @@ export function Navbar() {
                             </Link>
                         ))}
                     </nav>
-                    <Button size="sm">Get Started</Button>
+                    <Button size="sm">Contact Us</Button>
                 </div>
 
                 {/* Mobile Navigation */}
@@ -59,7 +59,7 @@ export function Navbar() {
                                     </Link>
                                 ))}
                                 <div className="pt-4">
-                                    <Button size="lg" className="w-full">Get Started</Button>
+                                    <Button size="lg" className="w-full">Contact Us</Button>
                                 </div>
                             </div>
                         </SheetContent>
