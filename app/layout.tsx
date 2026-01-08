@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { StructuredData } from "@/components/structured-data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,20 +45,11 @@ export const metadata: Metadata = {
     siteName: "Lintech Web Solutions",
     locale: "en_KE",
     type: "website",
-    images: [
-      {
-        url: "/og-image.jpg", // Needs to be created or mapped
-        width: 1200,
-        height: 630,
-        alt: "Lintech Web Solutions Showcase",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lintech Web Solutions | Top Web Designers Kenya",
     description: "Expert web design and development services in Kenya. Build your digital presence with Lintech.",
-    images: ["/og-image.jpg"], // Needs to be created or mapped
     creator: "@lintech", // Replace if available
   },
   robots: {
@@ -94,7 +86,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "LinTech Web Solutions",
-              "image": "https://lintechwebsolutions.co.ke/og-image.jpg",
+              "image": "https://lintechwebsolutions.co.ke/opengraph-image",
               "url": "https://lintechwebsolutions.co.ke",
               "telephone": "+254797967839",
               "email": "contact@lintechwebsolutions.co.ke",
@@ -127,6 +119,7 @@ export default function RootLayout({
             })
           }}
         />
+        <StructuredData />
         {children}
       </body>
     </html>

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Code2, Search, Smartphone, Wrench, Palette, CreditCard, Rocket, TrendingUp, Shield, Gauge } from "lucide-react"
 
-const services = [
+export const services = [
     {
         title: "Website Development",
         description: "Enterprise-grade web applications built with Next.js, React, and modern frameworks. Lightning-fast performance with scalable architecture.",

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Quote, Star } from "lucide-react"
 
-const testimonials = [
+export const testimonials = [
     {
         name: "Sarah Johnson",
         role: "CEO, TechStart",
