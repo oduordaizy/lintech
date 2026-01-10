@@ -6,17 +6,15 @@ import { Footer } from '@/components/footer';
 export default function PricingComponent() {
     const plans = [
         {
-            name: "Starter",
+            name: "Starter Website",
             description: "Ideal for small businesses or personal websites.",
             price: "25,000",
             features: [
                 "5 Page Custom Website (Home, About, Services, Blog, Contact)",
                 "Mobile Responsive Design",
                 "Contact Form & Basic SEO Setup",
-                "Social Media Integration",
                 "Basic Security Setup",
                 "1 Month Maintenance & Support",
-                "2 Free Revisions"
             ],
             popular: false
         },
@@ -29,10 +27,8 @@ export default function PricingComponent() {
                 "Up to 10 Pages with Blog",
                 "CMS Integration",
                 "Advanced SEO & Analytics Setup",
-                "Social Media & Marketing Tools",
                 "Enhanced Security Features",
                 "3 Months Maintenance & Support",
-                "10 Free Revisions"
             ],
             popular: true
         },
@@ -118,8 +114,8 @@ export default function PricingComponent() {
                                     {/* CTA Button */}
                                     <button
                                         className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-300 ${plan.popular
-                                                ? 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl'
-                                                : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
+                                            ? 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl'
+                                            : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                                             }`}
                                     >
                                         Get Quote

@@ -18,7 +18,7 @@ export default function Hero() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
                     <Button asChild size="lg" className="gap-2 text-base h-12 px-8 shadow-lg hover:shadow-xl transition-all">
                         <a href="mailto:contact@oduordaizy@gmail.com">
-                            Get A Free Quote <ArrowRight className="w-5 h-5" />
+                            Contact on Email <ArrowRight className="w-5 h-5" />
                         </a>
                     </Button>
                     <Button asChild size="lg" variant="outline" className="gap-2 text-base h-12 px-8">
@@ -60,7 +60,7 @@ export default function Hero() {
 
                     {/* Tech badges */}
                     <div className="flex flex-wrap gap-2 justify-center pt-4">
-                        {['React', 'WordPress', 'SEO', 'Mobile-First'].map((tech) => (
+                        {['Fast', 'Responsive', 'SEO Optimized', 'Secure'].map((tech) => (
                             <span key={tech} className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20">
                                 {tech}
                             </span>

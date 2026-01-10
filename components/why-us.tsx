@@ -4,7 +4,7 @@ export function WhyUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "Lightning Fast Delivery",
+            title: "Fast Delivery",
             description: "We deliver projects on time without compromising quality. Our agile methodology ensures rapid development cycles.",
             stat: "95%",
             statLabel: "On-Time Delivery",
@@ -34,7 +34,15 @@ export function WhyUs() {
             stat: "99.9%",
             statLabel: "Uptime Guarantee",
             gradient: "from-indigo-500 to-violet-500"
-        }
+        },
+        {
+            icon: Shield,
+            title: "Scalability",
+            description: "We deliver scalable solutions that grow with you",
+            stat: "100%",
+            statLabel: "Secure Projects",
+            gradient: "from-green-500 to-emerald-500"
+        },
     ];
 
     return (

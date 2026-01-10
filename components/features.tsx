@@ -28,7 +28,7 @@ export const services = [
     },
     {
         title: "Custom Web Solutions",
-        description: "Tailored web applications and bespoke features designed for your unique business requirements. From CRM to e-commerce platforms.",
+        description: "Tailored web applications and bespoke features designed for your unique business requirements. From CRM to e-commerce platforms and to startups.",
         icon: Palette,
         gradient: "from-indigo-500 to-blue-500",
     },
