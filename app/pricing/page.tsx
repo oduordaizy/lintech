@@ -114,8 +114,8 @@ export default function PricingComponent() {
                                     {/* CTA Button */}
                                     <button
                                         className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-300 ${plan.popular
-                                            ? 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl'
-                                            : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
+                                            ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-lg hover:shadow-xl'
+                                            : 'bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 hover:from-blue-100 hover:to-indigo-100 border border-blue-200'
                                             }`}
                                     >
                                         Get Quote

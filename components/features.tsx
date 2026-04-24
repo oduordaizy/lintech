@@ -6,38 +6,38 @@ export const services = [
         title: "Website Development",
         description: "Enterprise-grade web applications built with Next.js, React, and modern frameworks. Lightning-fast performance with scalable architecture.",
         icon: Code2,
-        gradient: "from-blue-500 to-cyan-500",
+        gradient: "from-blue-600 to-indigo-600",
     },
     {
         title: "SEO Optimization",
         description: "Advanced search engine optimization strategies that drive organic traffic. Rank higher on Google with proven on-page and technical SEO.",
         icon: Search,
-        gradient: "from-green-500 to-emerald-500",
+        gradient: "from-indigo-500 to-purple-600",
     },
     {
         title: "Responsive Design",
         description: "Mobile-first, cross-browser compatible designs that adapt flawlessly. Perfect user experience across desktop, tablet, and smartphone devices.",
         icon: Smartphone,
-        gradient: "from-purple-500 to-pink-500",
+        gradient: "from-blue-500 to-cyan-600",
     },
     {
         title: "Website Maintenance, and updates",
         description: "Proactive monitoring, security updates, and performance optimization. Keep your site secure, fast, and running 24/7 without downtime.",
         icon: Wrench,
-        gradient: "from-orange-500 to-red-500",
+        gradient: "from-indigo-600 to-blue-700",
     },
     {
         title: "Custom Web Solutions",
         description: "Tailored web applications and bespoke features designed for your unique business requirements. From CRM to e-commerce platforms and to startups.",
         icon: Palette,
-        gradient: "from-indigo-500 to-blue-500",
+        gradient: "from-blue-700 to-indigo-700",
     },
 
     {
         title: "Payment Integration",
         description: "Seamless M-Pesa and Stripe payment gateways. Secure checkout experiences with PCI-compliant integrations for global transactions.",
         icon: CreditCard,
-        gradient: "from-yellow-500 to-orange-500",
+        gradient: "from-cyan-600 to-blue-600",
     },
 ]
 

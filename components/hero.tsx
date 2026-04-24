@@ -17,7 +17,7 @@ export default function Hero() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
                     <Button asChild size="lg" className="gap-2 text-base h-12 px-8 shadow-lg hover:shadow-xl transition-all">
-                        <a href="mailto:contact@oduordaizy@gmail.com">
+                        <a href="mailto:contact@lintechwebsolutions.co.ke">
                             Contact on Email <ArrowRight className="w-5 h-5" />
                         </a>
                     </Button>
@@ -31,13 +31,13 @@ export default function Hero() {
             </div>
 
             {/* Enhanced Visual Element */}
-            <div className="w-full aspect-square lg:aspect-video rounded-2xl bg-gradient-to-br from-primary/20 via-primary/10 to-background flex items-center justify-center border border-border/50 shadow-2xl relative overflow-hidden group">
+            <div className="w-full aspect-square lg:aspect-video rounded-2xl bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex items-center justify-center border border-blue-100 shadow-2xl relative overflow-hidden group">
                 {/* Animated grid background */}
-                <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]" />
+                <div className="absolute inset-0 bg-grid-blue-200/[0.3] [mask-image:radial-gradient(ellipse_at_center,black,transparent)]" />
 
                 {/* Gradient orbs */}
-                <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/30 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-primary/20 rounded-full blur-3xl animate-pulse delay-700" />
+                <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-400/30 to-indigo-500/30 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-br from-indigo-400/20 to-purple-500/20 rounded-full blur-3xl animate-pulse delay-700" />
 
                 {/* Floating elements */}
                 <div className="absolute top-12 right-12 w-16 h-16 border-2 border-primary/30 rounded-lg rotate-12 group-hover:rotate-45 transition-transform duration-700" />

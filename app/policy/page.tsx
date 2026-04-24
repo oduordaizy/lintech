@@ -315,10 +315,10 @@ export default function PrivacyPolicy() {
                                 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
                             </p>
                             <div className="space-y-2 text-muted-foreground">
-                                <p><strong>Email:</strong> info@lintech.co.ke</p>
+                                <p><strong>Email:</strong> info@lintechwebsolutions.co.ke</p>
                                 <p><strong>Phone:</strong> +254 797 967 839</p>
                                 <p><strong>Address:</strong> Nairobi, Kenya</p>
-                                <p><strong>Data Protection Officer:</strong> privacy@lintech.co.ke</p>
+                                <p><strong>Data Protection Officer:</strong> privacy@lintechwebsolutions.co.ke</p>
                             </div>
                         </div>
 

@@ -219,8 +219,8 @@ export default function TermsAndConditions() {
                                 If you have any questions about these Terms and Conditions, please contact us:
                             </p>
                             <div className="space-y-2 text-muted-foreground">
-                                <p><strong>Email:</strong> info@lintechwebsolutions.com</p>
-                                <p><strong>Phone:</strong> +254 97967839</p>
+                                <p><strong>Email:</strong> info@lintechwebsolutions.co.ke</p>
+                                <p><strong>Phone:</strong> +254 797 967 839</p>
                                 <p><strong>Address:</strong> Nairobi, Kenya</p>
                             </div>
                         </div>

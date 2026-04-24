@@ -15,7 +15,7 @@ export function Contact() {
                     <div className="space-y-4 pt-4">
                         <div>
                             <h3 className="font-semibold mb-1">Email Us</h3>
-                            <p className="text-muted-foreground"> info@lintech.co.ke | oduordaizy@gmail.com</p>
+                            <p className="text-muted-foreground"> info@lintechwebsolutions.co.ke</p>
                         </div>
                         <div>
                             <h3 className="font-semibold mb-1">Call Us</h3>
