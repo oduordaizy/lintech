@@ -10,7 +10,7 @@ const projects = [
         description: "A portfolio website for data analyst with a modern, responsive design and a focus on user experience.",
         category: "Web Development",
         imageUrl: "/projects/portfolio-website.jpg",
-        gradient: "bg-gradient-to-b from-blue-500 via-indigo-600 to-purple-700",
+        gradient: "bg-gradient-to-b from-blue-500 via-indigo-600 to-blue-700",
         tech: ["Next.js", "Tailwind CSS", "TypeScript"],
         stats: { views: "12K", conversion: "3.2%" },
     },
@@ -19,7 +19,7 @@ const projects = [
         description: "Full-featured online store with Stripe payment integration, inventory management, and real-time order tracking.",
         category: "Web Development",
         imageUrl: "/projects/demeters.jpg",
-        gradient: "bg-gradient-to-b from-green-500 via-emerald-600 to-teal-700",
+        gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
         tech: ["React", "D3.js", "Node.js"],
         stats: { views: "8.5K", conversion: "4.1%" },
     },
@@ -28,7 +28,7 @@ const projects = [
         description: "Modern, accessible healthcare platform with patient portals, appointment booking, and HIPAA-compliant secure messaging.",
         category: "Healthcare",
         imageUrl: "/projects/medicare.jpg",
-        gradient: "bg-gradient-to-b from-orange-500 via-red-600 to-pink-700",
+        gradient: "bg-gradient-to-b from-blue-600 via-indigo-700 to-purple-700",
         tech: ["WordPress", "HIPAA", "SEO"],
         stats: { views: "15K", conversion: "5.8%" },
     },
@@ -53,17 +53,17 @@ export default function Portfolio() {
     }
 
     return (
-        <section id="portfolio" className="container py-20 md:py-28 px-4 md:px-8 max-w-screen-2xl">
+        <section id="portfolio" className="container py-20 md:py-28 px-4 md:px-8 max-w-screen-2xl bg-gradient-to-b from-blue-50/50 via-white to-indigo-50/50">
             <div className="bg-secondary/30 rounded-3xl p-8 md:p-12 lg:p-16">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
                             <Award className="w-4 h-4" />
                             <span>Featured Projects</span>
                         </div>
 
                         <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-                            <span className="bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                                 Our Latest Work
                             </span>
                         </h2>

@@ -3,6 +3,64 @@ import { services } from "./features"
 import { testimonials } from "./testimonials"
 
 export function StructuredData() {
+    const businessName = "Lintech Web Solutions"
+    const websiteUrl = "https://lintechwebsolutions.co.ke"
+
+    // Organization Schema - Primary for Google Knowledge Graph
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": businessName,
+        "alternateName": "Lintech",
+        "url": websiteUrl,
+        "logo": `${websiteUrl}/logo.png`,
+        "description": "Lintech Web Solutions offers premium web design and development services in Kenya. We build stunning, high-performance websites for businesses.",
+        "foundingDate": "2016",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Kenya"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Nairobi",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+254797967839",
+            "contactType": "customer service",
+            "email": "contact@lintechwebsolutions.co.ke",
+            "availableLanguage": "English"
+        },
+        "sameAs": [
+            "https://www.facebook.com/lintechwebsolutions",
+            "https://www.twitter.com/lintech",
+            "https://www.linkedin.com/company/lintechwebsolutions",
+            "https://www.instagram.com/lintechwebsolutions"
+        ]
+    }
+
+    // WebSite Schema - Helps Google understand the site name
+    const webSiteSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": businessName,
+        "alternateName": "Lintech",
+        "url": websiteUrl,
+        "description": "Premium web design and development services in Kenya",
+        "publisher": {
+            "@type": "Organization",
+            "name": businessName,
+            "url": websiteUrl
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${websiteUrl}/search?q={search_term_string}`,
+            "query-input": "required name=search_term_string"
+        }
+    }
+
     // FAQ Schema
     const faqSchema = {
         "@context": "https://schema.org",
@@ -29,9 +87,9 @@ export function StructuredData() {
                 "name": service.title,
                 "description": service.description,
                 "provider": {
-                    "@type": "LocalBusiness",
-                    "name": "LinTech Web Solutions",
-                    "url": "https://lintechwebsolutions.co.ke"
+                    "@type": "Organization",
+                    "name": businessName,
+                    "url": websiteUrl
                 },
                 "areaServed": {
                     "@type": "Country",
@@ -46,8 +104,8 @@ export function StructuredData() {
     const reviewSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "LinTech Web Solutions",
-        "url": "https://lintechwebsolutions.co.ke",
+        "name": businessName,
+        "url": websiteUrl,
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5",
@@ -67,12 +125,20 @@ export function StructuredData() {
                 "bestRating": "5"
             },
             "reviewBody": testimonial.content,
-            "datePublished": "2025-12-01" // You may want to add actual dates to testimonials data
+            "datePublished": "2025-12-01"
         }))
     }
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+            />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

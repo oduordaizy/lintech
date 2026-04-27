@@ -20,6 +20,7 @@ export default function Home() {
       <Hero />
       <Features />
       <WhyUs />
+      <Portfolio />
       <About />
       <Faq />
       <Contact />

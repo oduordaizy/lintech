@@ -29,12 +29,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Lintech Web Solutions" }],
   creator: "Lintech Web Solutions",
   publisher: "Lintech Web Solutions",
+  applicationName: "Lintech Web Solutions",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://lintechwebsolutions.co.ke"), // Replace with actual domain
+  metadataBase: new URL("https://lintechwebsolutions.co.ke"),
   alternates: {
     canonical: "/",
   },
@@ -50,7 +51,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lintech Web Solutions | Top Web Designers Kenya",
     description: "Expert web design and development services in Kenya. Build your digital presence with Lintech.",
-    creator: "@lintech", // Replace if available
+    creator: "@lintech",
+    site: "@lintech",
   },
   robots: {
     index: true,
@@ -67,6 +69,9 @@ export const metadata: Metadata = {
     icon: "/logo.png",
     apple: "/logo.png",
   },
+  verification: {
+    google: "your-google-verification-code",
+  },
 };
 
 export default function RootLayout({
@@ -79,46 +84,6 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased`}
       >
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "LinTech Web Solutions",
-              "image": "https://lintechwebsolutions.co.ke/opengraph-image",
-              "url": "https://lintechwebsolutions.co.ke",
-              "telephone": "+254797967839",
-              "email": "contact@lintechwebsolutions.co.ke",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Nairobi",
-                "addressLocality": "Nairobi",
-                "addressCountry": "KE"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "-1.2921",
-                "longitude": "36.8219"
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday"
-                ],
-                "opens": "09:00",
-                "closes": "17:00"
-              },
-              "priceRange": "Ksh 20000 - 70000"
-            })
-          }}
-        />
         <StructuredData />
         {children}
       </body>

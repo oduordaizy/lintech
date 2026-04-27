@@ -1,7 +1,15 @@
 import React from 'react';
+import { Metadata } from 'next';
 import { Shield, Lock, Eye, Database, Cookie, Mail, AlertTriangle, UserCheck } from 'lucide-react';
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function PrivacyPolicy() {
     return (
