@@ -1,42 +1,43 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 import { Code2, Search, Smartphone, Wrench, Palette, CreditCard, Rocket, TrendingUp, Shield, Gauge } from "lucide-react"
 
 export const services = [
     {
         title: "Website Development",
         description: "Enterprise-grade web applications built with Next.js, React, and modern frameworks. Lightning-fast performance with scalable architecture.",
-        icon: Code2,
+        image: "/services/website-development.jpg",
         gradient: "from-blue-600 to-indigo-600",
     },
     {
         title: "SEO Optimization",
         description: "Advanced search engine optimization strategies that drive organic traffic. Rank higher on Google with proven on-page and technical SEO.",
-        icon: Search,
+        image: "/services/seo.jpg",
         gradient: "from-indigo-500 to-purple-600",
     },
     {
         title: "Responsive Design",
         description: "Mobile-first, cross-browser compatible designs that adapt flawlessly. Perfect user experience across desktop, tablet, and smartphone devices.",
-        icon: Smartphone,
+        image: "/services/responsive-design.jpg",
         gradient: "from-blue-500 to-cyan-600",
     },
     {
         title: "Website Maintenance, and updates",
         description: "Proactive monitoring, security updates, and performance optimization. Keep your site secure, fast, and running 24/7 without downtime.",
-        icon: Wrench,
+        image: "/services/website-maintenance.jpg",
         gradient: "from-indigo-600 to-blue-700",
     },
     {
         title: "Custom Web Solutions",
         description: "Tailored web applications and bespoke features designed for your unique business requirements. From CRM to e-commerce platforms and to startups.",
-        icon: Palette,
+        image: "/services/custom-solutions.jpg",
         gradient: "from-blue-700 to-indigo-700",
     },
 
     {
         title: "Payment Integration",
         description: "Seamless M-Pesa and Stripe payment gateways. Secure checkout experiences with PCI-compliant integrations for global transactions.",
-        icon: CreditCard,
+        image: "/services/payments.png",
         gradient: "from-cyan-600 to-blue-600",
     },
 ]
@@ -66,15 +67,16 @@ export default function Features() {
                         <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
 
                         <CardHeader className="space-y-4 pb-4">
-                            {/* Icon container with gradient */}
-                            <div className="relative">
-                                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.gradient} p-0.5 group-hover:scale-110 transition-transform duration-300`}>
-                                    <div className="w-full h-full bg-card rounded-xl flex items-center justify-center">
-                                        <service.icon className={`w-7 h-7 bg-gradient-to-br ${service.gradient} bg-clip-text text-transparent`} strokeWidth={2.5} />
-                                    </div>
-                                </div>
-                                {/* Glow effect */}
-                                <div className={`absolute inset-0 rounded-xl bg-gradient-to-br ${service.gradient} blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300`} />
+                            {/* Image container with gradient */}
+                            <div className="relative w-full h-48 rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                                <Image
+                                    src={service.image}
+                                    alt={service.title}
+                                    fill
+                                    className="object-cover"
+                                />
+                                {/* Gradient overlay */}
+                                <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-20 group-hover:opacity-10 transition-opacity duration-300`} />
                             </div>
 
                             <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
