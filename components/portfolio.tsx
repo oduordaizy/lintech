@@ -13,6 +13,7 @@ const projects = [
         gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
         tech: ["React", "D3.js", "Django"],
         stats: { views: "8.5K", conversion: "4.1%" },
+        url: "https://itravas.com",
     },
     {
         title: "Avoworld Website",
@@ -22,6 +23,7 @@ const projects = [
         gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
         tech: ["React", "D3.js", "Django"],
         stats: { views: "8.5K", conversion: "4.1%" },
+        url: "https://avoworld.vercel.app",
     },
     {
         title: "Demeters' Gardens Website",
@@ -31,6 +33,7 @@ const projects = [
         gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
         tech: ["React", "D3.js", "Node.js"],
         stats: { views: "8.5K", conversion: "4.1%" },
+        url: "https://lintechwebsolutions.co.ke",
     },
     {
         title: "Medicare Website",
@@ -40,6 +43,7 @@ const projects = [
         gradient: "bg-gradient-to-b from-blue-600 via-indigo-700 to-purple-700",
         tech: ["WordPress", "HIPAA", "SEO"],
         stats: { views: "15K", conversion: "5.8%" },
+        url: "https://lintechwebsolutions.co.ke",
     },
 
 ]
@@ -195,11 +199,14 @@ export default function Portfolio() {
 
                             <CardFooter className="pt-2">
                                 <Button
+                                    asChild
                                     variant="link"
                                     className="p-0 h-auto font-semibold gap-2 group/btn text-base"
                                 >
-                                    View Website
-                                    <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                        View Website
+                                        <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                                    </a>
                                 </Button>
                             </CardFooter>
                         </Card>
