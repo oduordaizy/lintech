@@ -129,6 +129,95 @@ export function StructuredData() {
         }))
     }
 
+    // Breadcrumb Schema - Helps with sitelinks and search appearance
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": websiteUrl
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": `${websiteUrl}/about`
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Services",
+                "item": `${websiteUrl}/services`
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Projects",
+                "item": `${websiteUrl}/projects`
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Pricing",
+                "item": `${websiteUrl}/pricing`
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Contact Us",
+                "item": `${websiteUrl}/contact`
+            }
+        ]
+    }
+
+    // Site Navigation Schema - Explicitly tells Google about the menu
+    const siteNavigationSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Main Navigation",
+        "itemListElement": [
+            {
+                "@type": "SiteNavigationElement",
+                "position": 1,
+                "name": "Home",
+                "url": websiteUrl
+            },
+            {
+                "@type": "SiteNavigationElement",
+                "position": 2,
+                "name": "About Us",
+                "url": `${websiteUrl}/about`
+            },
+            {
+                "@type": "SiteNavigationElement",
+                "position": 3,
+                "name": "Services",
+                "url": `${websiteUrl}/services`
+            },
+            {
+                "@type": "SiteNavigationElement",
+                "position": 4,
+                "name": "Projects",
+                "url": `${websiteUrl}/projects`
+            },
+            {
+                "@type": "SiteNavigationElement",
+                "position": 5,
+                "name": "Pricing",
+                "url": `${websiteUrl}/pricing`
+            },
+            {
+                "@type": "SiteNavigationElement",
+                "position": 6,
+                "name": "Contact Us",
+                "url": `${websiteUrl}/contact`
+            }
+        ]
+    }
+
     return (
         <>
             <script
@@ -138,6 +227,14 @@ export function StructuredData() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
             />
             <script
                 type="application/ld+json"

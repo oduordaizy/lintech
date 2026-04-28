@@ -28,12 +28,12 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#about" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
+                                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
                                     About Us
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#features" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
+                                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
                                     Services
                                 </Link>
                             </li>
@@ -43,17 +43,22 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#contact" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
+                                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
                                     Contact
                                 </Link>
                             </li>
                         </ul>
                     </div>
-
+ 
                     {/* Resources */}
                     <div className="space-y-4 md:space-y-5">
                         <h3 className="font-semibold text-lg">Resources</h3>
                         <ul className="space-y-3 text-sm">
+                            <li>
+                                <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
+                                    Our Projects
+                                </Link>
+                            </li>
                             <li>
                                 <Link href="/#faq" className="text-muted-foreground hover:text-primary transition-colors duration-200 hover:translate-x-1 inline-block">
                                     FAQ

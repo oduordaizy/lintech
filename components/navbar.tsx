@@ -7,10 +7,11 @@ import Image from "next/image"
 export function Navbar() {
     const links = [
         { href: "/", label: "Home" },
-        { href: "#about", label: "About" },
-        { href: "#services", label: "Services" },
+        { href: "/about", label: "About" },
+        { href: "/services", label: "Services" },
+        { href: "/projects", label: "Projects" },
         { href: "/pricing", label: "Pricing" },
-        { href: "#contact", label: "Contact" },
+        { href: "/contact", label: "Contact" },
     ]
 
     return (
