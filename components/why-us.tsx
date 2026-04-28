@@ -65,7 +65,7 @@ export function WhyUs() {
                         return (
                             <div
                                 key={index}
-                                className="group relative bg-card border border-border rounded-2xl p-6 md:p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1"
+                                className="group relative bg-card border border-border rounded-2xl p-6 md:p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 text-center"
                             >
                                 {/* Icon with gradient background */}
                                 <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${reason.gradient} mb-4`}>
