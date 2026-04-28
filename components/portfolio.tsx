@@ -6,13 +6,22 @@ import { ExternalLink, Award, Eye, ChevronDown, ChevronUp } from "lucide-react"
 
 const projects = [
     {
-        title: "Portfolio Website",
-        description: "A portfolio website for data analyst with a modern, responsive design and a focus on user experience.",
+        title: "iTravas",
+        description: "A travel booking platform that allows for ridesharing",
         category: "Web Development",
-        imageUrl: "/projects/portfolio-website.jpg",
-        gradient: "bg-gradient-to-b from-blue-500 via-indigo-600 to-blue-700",
-        tech: ["Next.js", "Tailwind CSS", "TypeScript"],
-        stats: { views: "12K", conversion: "3.2%" },
+        imageUrl: "/projects/itravas.jpg",
+        gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
+        tech: ["React", "D3.js", "Django"],
+        stats: { views: "8.5K", conversion: "4.1%" },
+    },
+    {
+        title: "Avoworld Website",
+        description: "A website for a Avocado logistics and transportation company",
+        category: "Web Development",
+        imageUrl: "/projects/avoworld.jpg",
+        gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
+        tech: ["React", "D3.js", "Django"],
+        stats: { views: "8.5K", conversion: "4.1%" },
     },
     {
         title: "Demeters' Gardens Website",
@@ -32,6 +41,7 @@ const projects = [
         tech: ["WordPress", "HIPAA", "SEO"],
         stats: { views: "15K", conversion: "5.8%" },
     },
+
 ]
 
 export default function Portfolio() {
