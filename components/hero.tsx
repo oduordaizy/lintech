@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden bg-mist-white">
+        <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center pt-20 md:pt-24 pb-12 md:pb-16 overflow-hidden bg-mist-white">
             {/* Background elements */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(26,74,138,0.05)_0%,transparent_70%)] z-0"></div>
             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-royal-blue/5 rounded-full blur-[120px] z-0 animate-pulse"></div>
@@ -44,21 +44,21 @@ export default function Hero() {
                 {/* Visual Element */}
                 <div className="relative group animate-in fade-in zoom-in duration-1000 delay-300">
                     <div className="absolute -inset-4 bg-gradient-to-r from-gold/20 to-royal-blue/20 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all opacity-30"></div>
-                    <div className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/5] rounded-[3rem] overflow-hidden border border-navy/5 shadow-2xl shadow-navy/10 group-hover:scale-[1.02] transition-transform duration-700 max-w-lg mx-auto flex items-center justify-center">
+                    <div className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/5] rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-navy/5 shadow-2xl shadow-navy/10 group-hover:scale-[1.02] transition-transform duration-700 max-w-sm md:max-w-lg mx-auto flex items-center justify-center">
                         <Image
                             src="/hero-img-3.png"
                             alt="Lintech Web Solutions"
-                            width={800}
-                            height={800}
-                            className="object-cover"
+                            width={600}
+                            height={600}
+                            className="object-cover w-full h-full"
                             priority
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-60"></div>
                         
                         {/* Floating Tech Badges */}
-                        <div className="absolute bottom-8 left-8 right-8 flex flex-wrap gap-3">
+                        <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8 right-4 md:right-8 flex flex-wrap gap-2 md:gap-3">
                             {['Innovation', 'Performance', 'Security'].map((tag) => (
-                                <span key={tag} className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest shadow-xl">
+                                <span key={tag} className="px-3 md:px-4 py-1.5 md:py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white text-[9px] md:text-[10px] font-bold uppercase tracking-widest shadow-xl">
                                     {tag}
                                 </span>
                             ))}

@@ -49,12 +49,12 @@ export const services = [
 
 export default function Features() {
     return (
-        <section id="services" className="py-24 bg-navy relative overflow-hidden">
+        <section id="services" className="py-16 md:py-24 bg-navy relative overflow-hidden">
             {/* Sapphire Mist Background Decorations */}
             <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[radial-gradient(circle_at_80%_20%,rgba(26,74,138,0.15)_0%,transparent_70%)]"></div>
             
             <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
-                <div className="text-center mb-20 space-y-4">
+                <div className="text-center mb-12 md:mb-20 space-y-4">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gold text-xs font-bold uppercase tracking-widest">
                         <span>Our Expertise</span>
                     </div>
@@ -66,13 +66,13 @@ export default function Features() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
                             className="group relative glass-dark rounded-[2rem] border-white/5 hover:border-gold/30 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/10 overflow-hidden"
                         >
-                            <div className="relative h-56 overflow-hidden">
+                            <div className="relative h-48 md:h-56 overflow-hidden">
                                 <Image
                                     src={service.image}
                                     alt={service.title}
@@ -87,7 +87,7 @@ export default function Features() {
                                 </div>
                             </div>
 
-                            <div className="p-8 space-y-4">
+                            <div className="p-6 md:p-8 space-y-4">
                                 <h3 className="text-2xl font-bold text-mist-white group-hover:text-gold transition-colors">
                                     {service.title}
                                 </h3>
@@ -108,4 +108,4 @@ export default function Features() {
         </section>
     )
 }
-
+

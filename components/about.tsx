@@ -29,17 +29,17 @@ export function About() {
     return (
         <section
             id="about"
-            className="relative py-24 md:py-36 overflow-hidden bg-navy"
+            className="relative py-24 mddden
         >
             {/* Sapphire Decorations */}
             <div className="absolute -top-24 -left-24 w-96 h-96 bg-deep-blue/20 rounded-full blur-[120px] pointer-events-none"></div>
             
             <div className="container max-w-screen-xl px-6 md:px-12 mx-auto relative z-10">
-                <div className="grid lg:grid-cols-[1fr_1.1fr] gap-16 lg:gap-24 items-center">
+                <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-24 items-center">
                     
                     {/* Left: Image + Experience Card */}
                     <div className="relative">
-                        <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border border-white/5">
+                        <div className="relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-2xl border border-white/5">
                             <Image
                                 src="/ab.png"
                                 alt="Lintech team"
@@ -72,9 +72,9 @@ export function About() {
                         </div>
 
                         {/* Pillars */}
-                        <div className="grid gap-6">
+                        <div className="grid gap-4 md:gap-6">
                             {pillars.map((p) => (
-                                <div key={p.number} className="group flex gap-6 p-6 rounded-2xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
+                                <div key={p.number} className="group flex gap-4 md:gap-6 p-4 md:p-6 rounded-xl md:rounded-2xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
                                     <span className="text-xl font-bold text-gold opacity-30 group-hover:opacity-100 transition-opacity">{p.number}</span>
                                     <div className="space-y-1">
                                         <h3 className="font-bold text-mist-white text-lg">{p.title}</h3>
@@ -84,7 +84,7 @@ export function About() {
                             ))}
                         </div>
 
-                        <div className="flex items-center gap-6 pt-4">
+                        <div className="flex items-center gap-4 md:gap-6 pt-4">
                             <Button size="lg" variant="gold" className="rounded-full shadow-lg shadow-gold/20">
                                 Meet Our Experts
                             </Button>

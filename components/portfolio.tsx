@@ -67,9 +67,9 @@ export default function Portfolio() {
     }
 
     return (
-        <section id="portfolio" className="py-24 bg-mist-white relative">
+        <section id="portfolio" className="py-16 md:py-24 bg-mist-white relative">
             <div className="container max-w-screen-2xl px-4 md:px-8">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 gap-8">
                     <div className="space-y-4">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-deep-blue/5 border border-deep-blue/10 text-deep-blue text-xs font-bold uppercase tracking-widest">
                             <Award className="w-3.5 h-3.5" />
@@ -84,13 +84,13 @@ export default function Portfolio() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
                     {projects.map((project, index) => (
                         <div
                             key={index}
                             className="group relative"
                         >
-                            <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-navy/5 shadow-2xl shadow-navy/5 bg-white transition-all duration-500 group-hover:shadow-gold/10 group-hover:border-gold/20">
+                            <div className="relative aspect-[16/10] rounded-2xl md:rounded-3xl overflow-hidden border border-navy/5 shadow-2xl shadow-navy/5 bg-white transition-all duration-500 group-hover:shadow-gold/10 group-hover:border-gold/20">
                                 {/* Browser Frame UI */}
                                 <div className="absolute top-0 left-0 right-0 h-10 bg-muted/30 border-b border-navy/5 flex items-center px-4 gap-2 z-20">
                                     <div className="flex gap-1.5">
@@ -144,7 +144,7 @@ export default function Portfolio() {
                                 </div>
                             </div>
 
-                            <div className="mt-6 flex justify-between items-start">
+                            <div className="mt-4 md:mt-6 flex justify-between items-start gap-4">
                                 <div className="space-y-1">
                                     <h3 className="text-2xl font-bold text-navy group-hover:text-deep-blue transition-colors">{project.title}</h3>
                                     <div className="flex gap-2">

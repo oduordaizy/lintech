@@ -5,12 +5,12 @@ import { Label } from "@/components/ui/label"
 
 export function Contact() {
     return (
-        <section id="contact" className="py-24 bg-mist-white relative overflow-hidden">
+        <section id="contact" className="py-16 md:py-24 bg-mist-white relative overflow-hidden">
             {/* Decorative background element */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-navy hidden lg:block -skew-x-6 translate-x-12"></div>
             
             <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div className="space-y-10">
                         <div className="space-y-4">
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-deep-blue/5 border border-deep-blue/10 text-deep-blue text-xs font-bold uppercase tracking-widest">
@@ -26,7 +26,7 @@ export function Contact() {
                         </div>
 
                         <div className="grid gap-8">
-                            <div className="flex items-center gap-6 group">
+                            <div className="flex items-center gap-4 md:gap-6 group">
                                 <div className="w-12 h-12 rounded-xl bg-white shadow-xl flex items-center justify-center border border-navy/5 group-hover:border-gold transition-colors">
                                     <div className="text-gold font-bold">@</div>
                                 </div>
@@ -35,7 +35,7 @@ export function Contact() {
                                     <p className="text-navy font-bold">info@lintechwebsolutions.co.ke</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-6 group">
+                            <div className="flex items-center gap-4 md:gap-6 group">
                                 <div className="w-12 h-12 rounded-xl bg-white shadow-xl flex items-center justify-center border border-navy/5 group-hover:border-gold transition-colors">
                                     <div className="text-gold font-bold">P</div>
                                 </div>
@@ -47,7 +47,7 @@ export function Contact() {
                         </div>
                     </div>
 
-                    <div className="glass-dark p-8 md:p-12 rounded-[2rem] border-white/10 shadow-2xl">
+                    <div className="glass-dark p-6 md:p-8 lg:p-12 rounded-[1.5rem] md:rounded-[2rem] border-white/10 shadow-2xl">
                         <form className="space-y-6">
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div className="space-y-2">

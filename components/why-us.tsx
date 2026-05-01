@@ -29,7 +29,7 @@ export function WhyUs() {
     ];
 
     return (
-        <section id="why-us" className="py-24 bg-navy relative overflow-hidden">
+        <section id="why-us" className="py-16 md:py-28 bg-gradient-to-b from-background to-muted/20">
             {/* Background pattern */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(201,168,76,0.05)_0%,transparent_50%)]"></div>
             
@@ -46,7 +46,7 @@ export function WhyUs() {
                             </p>
                         </div>
 
-                        <div className="grid sm:grid-cols-2 gap-8 pt-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                             <div className="space-y-2">
                                 <div className="text-4xl font-bold text-gold">99.9%</div>
                                 <div className="text-sm font-semibold uppercase tracking-widest text-mist-white/40">Uptime Reliability</div>
@@ -64,7 +64,7 @@ export function WhyUs() {
                             return (
                                 <div
                                     key={index}
-                                    className="group glass-dark p-8 rounded-2xl border-white/5 hover:border-gold/30 transition-all duration-500 flex gap-6 items-start"
+                                    className="group gassspd8 kopd8te/5 hover:brborgerdwhite/530 transition-golda3ion-500 flex gap-6 items-s5artflgp6 tessa
                                 >
                                     <div className="p-4 rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 group-hover:border-gold/50 transition-colors">
                                         <Icon className="w-6 h-6 text-gold" />

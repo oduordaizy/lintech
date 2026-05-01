@@ -4,15 +4,15 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "luc
 
 export function Footer() {
     return (
-        <footer className="bg-navy text-mist-white pt-24 pb-12 overflow-hidden relative">
+        <footer className="bg-navy text-mist-white pt-16 md:pt-24 pb-8 md:pb-12 overflow-hidden relative">
             {/* Background decoration */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold via-deep-blue to-gold"></div>
             <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
 
             <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
                     {/* Brand Column */}
-                    <div className="space-y-6 lg:col-span-1">
+                    <div className="space-y-4 md:space-y-6 lg:col-span-1">
                         <Link href="/" className="flex items-center space-x-3 group">
                             <div className="relative w-12 h-12 overflow-hidden rounded-xl bg-white flex items-center justify-center border border-gold/30 group-hover:border-gold transition-colors">
                                 <Image src="/logo.png" alt="Logo" width={36} height={36} className="object-contain" />
@@ -78,7 +78,7 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="mt-12 md:mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-mist-white/30 text-xs font-medium">
                         &copy; {new Date().getFullYear()} Lintech Web Solutions. Crafted with precision in Kenya.
                     </p>
