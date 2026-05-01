@@ -37,11 +37,11 @@ export function WhyUs() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div className="space-y-8">
                         <div className="space-y-4">
-                            <h2 className="text-4xl md:text-6xl font-bold text-mist-white leading-tight">
+                            <h2 className="text-4xl md:text-6xl font-bold text-navy leading-tight">
                                 Why Visionary Brands <br />
                                 <span className="text-gradient-gold">Choose Us</span>
                             </h2>
-                            <p className="text-mist-white/60 text-lg max-w-lg leading-relaxed">
+                            <p className="text-navy/60 text-lg max-w-lg leading-relaxed">
                                 We don't just build websites; we architect digital ecosystems that power global businesses.
                             </p>
                         </div>
@@ -49,7 +49,7 @@ export function WhyUs() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                             <div className="space-y-2">
                                 <div className="text-4xl font-bold text-gold">99.9%</div>
-                                <div className="text-sm font-semibold uppercase tracking-widest text-mist-white/40">Uptime Reliability</div>
+                                <div className="text-sm font-semibold uppercase tracking-widest text-navy/40">Uptime Reliability</div>
                             </div>
                             {/* <div className="space-y-2">
                                 <div className="text-4xl font-bold text-gold">150+</div>
@@ -70,8 +70,8 @@ export function WhyUs() {
                                         <Icon className="w-6 h-6 text-gold" />
                                     </div>
                                     <div className="space-y-2">
-                                        <h3 className="text-xl font-bold text-mist-white">{reason.title}</h3>
-                                        <p className="text-mist-white/50 text-sm leading-relaxed">{reason.description}</p>
+                                        <h3 className="text-xl font-bold text-navy">{reason.title}</h3>
+                                        <p className="text-navy/50 text-sm leading-relaxed">{reason.description}</p>
                                     </div>
                                 </div>
                             );
