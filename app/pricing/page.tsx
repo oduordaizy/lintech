@@ -21,7 +21,7 @@ export default function PricingComponent() {
         {
             name: "Business",
             description: "Optimized for growing SMEs and service businesses.",
-            price: "60,000",
+            price: "50,000",
             features: [
                 "Everything in Starter",
                 "Up to 10 Pages with Blog",

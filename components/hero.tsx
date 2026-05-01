@@ -1,76 +1,73 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles } from "lucide-react"
+import Image from "next/image"
 
 export default function Hero() {
     return (
-        <section className="container grid lg:grid-cols-2 items-center py-16 md:py-24 lg:py-28 gap-10 md:gap-12 lg:gap-16 max-w-screen-2xl px-4 md:px-8">
-            <div className="text-center lg:text-left space-y-6 md:space-y-8">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
-                    <span className="text-foreground">
-                        Effective web solutions for businesses of any scale
-                    </span>
-                </h1>
+        <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden bg-mist-white">
+            {/* Background elements */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(26,74,138,0.05)_0%,transparent_70%)] z-0"></div>
+            <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-royal-blue/5 rounded-full blur-[120px] z-0 animate-pulse"></div>
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gold/5 rounded-full blur-[100px] z-0"></div>
 
-                <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                    Crafting high-performance websites that increase visibility and drive business growth.
-                </p>
+            <div className="container max-w-screen-2xl px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div className="space-y-8 text-center lg:text-left">
+                    {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-deep-blue/5 border border-deep-blue/10 backdrop-blur-sm animate-in fade-in slide-in-from-top-4 duration-1000">
+                        <Sparkles className="w-4 h-4 text-gold" />
+                        <span className="text-sm font-bold text-deep-blue/60 tracking-widest uppercase">Premier Web Development Agency</span>
+                    </div> */}
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-                    <Button asChild size="lg" className="gap-2 text-base h-12 px-8 shadow-lg hover:shadow-xl transition-all">
-                        <a href="mailto:contact@lintechwebsolutions.co.ke">
-                            Contact on Email <ArrowRight className="w-5 h-5" />
-                        </a>
-                    </Button>
-                    <Button asChild size="lg" variant="outline" className="gap-2 text-base h-12 px-8">
-                        <a href="https://wa.me/5511999999999">
-                            Chat on WhatsApp <ArrowRight className="w-5 h-5" />
-                        </a>
-                    </Button>
-                </div>
+                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-navy animate-in fade-in slide-in-from-left-8 duration-1000 delay-200">
+                        Crafting Digital <br />
+                        <span className="text-gradient-gold">Masterpieces</span> <br />
+                        for Your Business
+                    </h1>
 
-            </div>
+                    <p className="text-lg md:text-xl text-navy/60 max-w-xl mx-auto lg:mx-0 leading-relaxed animate-in fade-in slide-in-from-left-8 duration-1000 delay-300">
+                        We transform ambitious ideas into high-performance websites that captivate audiences and accelerate growth.
+                    </p>
 
-            {/* Enhanced Visual Element */}
-            <div className="w-full aspect-square lg:aspect-video rounded-2xl bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex items-center justify-center border border-blue-100 shadow-2xl relative overflow-hidden group">
-                {/* Animated grid background */}
-                <div className="absolute inset-0 bg-grid-blue-200/[0.3] [mask-image:radial-gradient(ellipse_at_center,black,transparent)]" />
-
-                {/* Gradient orbs */}
-                <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-400/30 to-indigo-500/30 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-br from-indigo-400/20 to-purple-500/20 rounded-full blur-3xl animate-pulse delay-700" />
-
-                {/* Floating elements */}
-                <div className="absolute top-12 right-12 w-16 h-16 border-2 border-primary/30 rounded-lg rotate-12 group-hover:rotate-45 transition-transform duration-700" />
-                <div className="absolute bottom-12 left-12 w-12 h-12 border-2 border-primary/20 rounded-full group-hover:scale-110 transition-transform duration-700" />
-
-                {/* Center content */}
-                <div className="relative z-10 p-8 text-center space-y-4">
-                    <div className="relative inline-block">
-                        <div className="text-6xl md:text-7xl font-mono font-bold bg-gradient-to-br from-primary to-primary/60 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-500">
-                            &lt;/&gt;
-                        </div>
-                        <div className="absolute inset-0 blur-2xl bg-primary/30 -z-10 group-hover:bg-primary/50 transition-colors" />
-                    </div>
-                    <div className="space-y-1">
-                        <div className="text-xl md:text-2xl font-bold text-foreground">Lintech Web Solutions</div>
-                        <div className="text-sm text-muted-foreground font-medium tracking-wider">
-                            DESIGN × DEVELOPMENT × RESULTS
-                        </div>
-                    </div>
-
-                    {/* Tech badges */}
-                    <div className="flex flex-wrap gap-2 justify-center pt-4">
-                        {['Fast', 'Responsive', 'SEO Optimized', 'Secure'].map((tech) => (
-                            <span key={tech} className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20">
-                                {tech}
-                            </span>
-                        ))}
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
+                        <Button size="lg" variant="gold" className="gap-2 group shadow-xl shadow-gold/20" asChild>
+                            <a href="#contact">
+                                Contact Us <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            </a>
+                        </Button>
+                        <Button size="lg" variant="outline" className="border-navy/10 text-navy hover:bg-navy/5 hover:border-navy/20 shadow-xl shadow-navy/5" asChild>
+                            <a href="#portfolio">
+                                View Portfolio
+                            </a>
+                        </Button>
                     </div>
                 </div>
 
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+                {/* Visual Element */}
+                <div className="relative group animate-in fade-in zoom-in duration-1000 delay-300">
+                    <div className="absolute -inset-4 bg-gradient-to-r from-gold/20 to-royal-blue/20 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all opacity-30"></div>
+                    <div className="relative aspect-[4/3] md:aspect-square lg:aspect-[4/5] rounded-[3rem] overflow-hidden border border-navy/5 shadow-2xl shadow-navy/10 group-hover:scale-[1.02] transition-transform duration-700 max-w-lg mx-auto flex items-center justify-center">
+                        <Image
+                            src="/hero-img-3.png"
+                            alt="Lintech Web Solutions"
+                            width={800}
+                            height={800}
+                            className="object-cover"
+                            priority
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-60"></div>
+                        
+                        {/* Floating Tech Badges */}
+                        <div className="absolute bottom-8 left-8 right-8 flex flex-wrap gap-3">
+                            {['Innovation', 'Performance', 'Security'].map((tag) => (
+                                <span key={tag} className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest shadow-xl">
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )
 }
+
+

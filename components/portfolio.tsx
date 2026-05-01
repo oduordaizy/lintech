@@ -67,149 +67,99 @@ export default function Portfolio() {
     }
 
     return (
-        <section id="portfolio" className="container py-20 md:py-28 px-4 md:px-8 max-w-screen-2xl bg-gradient-to-b from-blue-50/50 via-white to-indigo-50/50">
-            <div className="bg-secondary/30 rounded-3xl p-8 md:p-12 lg:p-16">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+        <section id="portfolio" className="py-24 bg-mist-white relative">
+            <div className="container max-w-screen-2xl px-4 md:px-8">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">
-                            <Award className="w-4 h-4" />
-                            <span>Featured Projects</span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-deep-blue/5 border border-deep-blue/10 text-deep-blue text-xs font-bold uppercase tracking-widest">
+                            <Award className="w-3.5 h-3.5" />
+                            <span>Our Work</span>
                         </div>
-
-                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-                            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                                Our Latest Work
-                            </span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-navy">
+                            Selected <span className="text-gradient-gold">Works</span>
                         </h2>
-
-                        <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed">
-                            Explore our portfolio of successful web projects. Each showcases our commitment to exceptional design,
-                            performance optimization, and measurable results.
-                        </p>
                     </div>
+                    <p className="text-muted-foreground text-lg max-w-md">
+                        A curated showcase of digital experiences we've crafted for world-class brands and innovative startups.
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                     {projects.map((project, index) => (
-                        <Card
+                        <div
                             key={index}
-                            className="overflow-hidden border-border/50 hover:border-primary/50 bg-background group cursor-pointer hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
+                            className="group relative"
                         >
-                            {/* Scrollable Full Website Screenshot Container */}
-                            <div
-                                ref={(el) => {
-                                    scrollRefs.current[index] = el
-                                }}
-                                className="relative h-80 overflow-y-auto overflow-x-hidden scroll-smooth group/scroll hide-scrollbar"
-                            >
-                                {/* Hide scrollbar with CSS */}
-                                <style jsx>{`
-                                    .hide-scrollbar::-webkit-scrollbar {
-                                        display: none;
-                                    }
-                                    .hide-scrollbar {
-                                        -ms-overflow-style: none;
-                                        scrollbar-width: none;
-                                    }
-                                `}</style>
-
-                                {/* Full Page Screenshot - Replace gradient with actual image */}
-                                {project.imageUrl ? (
-                                    <img
-                                        src={project.imageUrl}
-                                        alt={`${project.title} full page screenshot`}
-                                        className="w-full h-auto object-top object-contain"
-                                    />
-                                ) : (
-                                    // Placeholder that simulates a long website screenshot
-                                    <div className={`w-full min-h-[1200px] ${project.gradient} relative`}>
-                                        {/* Simulated header */}
-                                        <div className="h-16 bg-black/10 border-b border-white/10" />
-
-                                        {/* Simulated hero section */}
-                                        <div className="h-96 flex items-center justify-center border-b border-white/10">
-                                            <div className="text-center space-y-4 p-8">
-                                                <div className="text-6xl font-bold text-white/30">
-                                                    {String(index + 1).padStart(2, '0')}
-                                                </div>
-                                                <div className="text-xl font-semibold text-white/80">
-                                                    {project.title}
-                                                </div>
-                                                <div className="text-sm text-white/60 uppercase tracking-wider">
-                                                    Full Page Preview
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        {/* Simulated content sections */}
-                                        <div className="space-y-4 p-6">
-                                            {[1, 2, 3, 4].map((section) => (
-                                                <div key={section} className="bg-white/5 rounded-lg p-6 space-y-3">
-                                                    <div className="h-4 bg-white/20 rounded w-3/4" />
-                                                    <div className="h-3 bg-white/15 rounded w-full" />
-                                                    <div className="h-3 bg-white/15 rounded w-5/6" />
-                                                </div>
-                                            ))}
-                                        </div>
-
-                                        {/* Simulated footer */}
-                                        <div className="h-32 bg-black/20 border-t border-white/10 mt-8" />
+                            <div className="relative aspect-[16/10] rounded-3xl overflow-hidden border border-navy/5 shadow-2xl shadow-navy/5 bg-white transition-all duration-500 group-hover:shadow-gold/10 group-hover:border-gold/20">
+                                {/* Browser Frame UI */}
+                                <div className="absolute top-0 left-0 right-0 h-10 bg-muted/30 border-b border-navy/5 flex items-center px-4 gap-2 z-20">
+                                    <div className="flex gap-1.5">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400/40"></div>
+                                        <div className="w-2.5 h-2.5 rounded-full bg-amber-400/40"></div>
+                                        <div className="w-2.5 h-2.5 rounded-full bg-emerald-400/40"></div>
                                     </div>
-                                )}
+                                    <div className="mx-auto w-1/2 h-5 bg-white/50 rounded text-[10px] flex items-center justify-center text-navy/40 font-medium overflow-hidden whitespace-nowrap">
+                                        {project.url}
+                                    </div>
+                                </div>
 
-                                {/* Scroll control buttons overlay */}
-                                <div className="sticky bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background via-background/90 to-transparent flex items-end justify-center pb-4">
-                                    {/* Scroll control buttons */}
-                                    <div className="flex items-center gap-2">
+                                <div
+                                    ref={(el) => {
+                                        scrollRefs.current[index] = el
+                                    }}
+                                    className="relative h-full pt-10 overflow-y-auto overflow-x-hidden scroll-smooth hide-scrollbar bg-slate-50"
+                                >
+                                    <style jsx>{`
+                                        .hide-scrollbar::-webkit-scrollbar { display: none; }
+                                        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+                                    `}</style>
+
+                                    {project.imageUrl ? (
+                                        <img
+                                            src={project.imageUrl}
+                                            alt={project.title}
+                                            className="w-full h-auto object-top"
+                                        />
+                                    ) : (
+                                        <div className={`w-full min-h-full ${project.gradient} flex items-center justify-center p-12`}>
+                                            <div className="text-white/20 text-4xl font-bold uppercase tracking-tighter opacity-20">Preview</div>
+                                        </div>
+                                    )}
+
+                                    {/* Scroll Controls */}
+                                    <div className="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                                         <button
-                                            onClick={(e) => {
-                                                e.stopPropagation()
-                                                handleScroll(index, 'up')
-                                            }}
-                                            className="w-10 h-10 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground backdrop-blur-sm shadow-lg flex items-center justify-center transition-all hover:scale-110"
-                                            aria-label="Scroll up"
+                                            onClick={(e) => { e.stopPropagation(); handleScroll(index, 'up'); }}
+                                            className="w-12 h-12 rounded-full glass border-white/40 flex items-center justify-center pointer-events-auto hover:bg-white/40 transition-all hover:scale-110"
                                         >
-                                            <ChevronUp className="w-5 h-5" />
+                                            <ChevronUp className="w-6 h-6 text-navy" />
                                         </button>
                                         <button
-                                            onClick={(e) => {
-                                                e.stopPropagation()
-                                                handleScroll(index, 'down')
-                                            }}
-                                            className="w-10 h-10 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground backdrop-blur-sm shadow-lg flex items-center justify-center transition-all hover:scale-110"
-                                            aria-label="Scroll down"
+                                            onClick={(e) => { e.stopPropagation(); handleScroll(index, 'down'); }}
+                                            className="w-12 h-12 rounded-full glass border-white/40 flex items-center justify-center pointer-events-auto hover:bg-white/40 transition-all hover:scale-110"
                                         >
-                                            <ChevronDown className="w-5 h-5 animate-bounce" />
+                                            <ChevronDown className="w-6 h-6 text-navy" />
                                         </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <CardHeader className="pb-3 pt-5">
-                                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                                    {project.title}
-                                </CardTitle>
-                            </CardHeader>
-
-                            <CardContent className="space-y-4">
-                                <CardDescription className="text-sm leading-relaxed">
-                                    {project.description}
-                                </CardDescription>
-                            </CardContent>
-
-                            <CardFooter className="pt-2">
-                                <Button
-                                    asChild
-                                    variant="link"
-                                    className="p-0 h-auto font-semibold gap-2 group/btn text-base"
-                                >
+                            <div className="mt-6 flex justify-between items-start">
+                                <div className="space-y-1">
+                                    <h3 className="text-2xl font-bold text-navy group-hover:text-deep-blue transition-colors">{project.title}</h3>
+                                    <div className="flex gap-2">
+                                        {project.tech.map(t => (
+                                            <span key={t} className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{t}</span>
+                                        ))}
+                                    </div>
+                                </div>
+                                <Button variant="ghost" size="icon" asChild className="rounded-full hover:bg-gold/10 hover:text-gold transition-all group-hover:translate-x-1 group-hover:-translate-y-1">
                                     <a href={project.url} target="_blank" rel="noopener noreferrer">
-                                        View Website
-                                        <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                                        <ExternalLink className="w-5 h-5" />
                                     </a>
                                 </Button>
-                            </CardFooter>
-                        </Card>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

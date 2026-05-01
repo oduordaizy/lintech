@@ -5,28 +5,27 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-all duration-300 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-gold/50 active:scale-95",
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg",
+        default: "bg-gradient-to-r from-deep-blue to-royal-blue text-white shadow-lg shadow-deep-blue/20 hover:shadow-deep-blue/40 hover:-translate-y-0.5",
+        gold: "bg-gradient-to-r from-gold via-[#F1D279] to-gold text-navy shadow-lg shadow-gold/20 hover:shadow-gold/40 hover:-translate-y-0.5",
         destructive:
-          "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+          "bg-destructive text-white hover:bg-destructive/90",
         outline:
-          "border border-blue-200 bg-white text-blue-700 shadow-xs hover:bg-blue-50 hover:border-blue-300",
+          "border-2 border-deep-blue/20 bg-transparent text-deep-blue hover:bg-deep-blue/5 hover:border-deep-blue/40",
         secondary:
-          "bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 hover:from-blue-100 hover:to-indigo-100 border border-blue-200",
+          "bg-mist-white text-deep-blue hover:bg-sky-blue/20 border border-deep-blue/10",
         ghost:
-          "hover:bg-blue-50 hover:text-blue-700",
-        link: "text-blue-600 underline-offset-4 hover:underline",
+          "hover:bg-deep-blue/5 hover:text-deep-blue",
+        link: "text-deep-blue underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
-        icon: "size-9",
-        "icon-sm": "size-8",
-        "icon-lg": "size-10",
+        default: "h-11 px-6 py-2",
+        sm: "h-9 rounded-md px-4",
+        lg: "h-13 rounded-xl px-8 text-base",
+        icon: "size-10",
       },
     },
     defaultVariants: {
@@ -35,6 +34,7 @@ const buttonVariants = cva(
     },
   }
 )
+
 
 function Button({
   className,

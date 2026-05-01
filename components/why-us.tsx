@@ -4,90 +4,82 @@ export function WhyUs() {
     const reasons = [
         {
             icon: Zap,
-            title: "Fast Delivery",
-            description: "We deliver projects on time without compromising quality. Our agile methodology ensures rapid development cycles.",
-            stat: "95%",
-            statLabel: "On-Time Delivery",
-            gradient: "from-yellow-500 to-orange-500"
+            title: "Rapid Execution",
+            description: "We accelerate your time-to-market with agile workflows and high-performance technologies.",
+            stat: "2x",
+            statLabel: "Faster Launch",
+            gradient: "from-gold to-orange-400"
         },
         {
             icon: Shield,
-            title: "Enterprise-Grade Security",
-            description: "Your data is protected with industry-leading security practices, SSL encryption, and regular security audits.",
+            title: "Elite Security",
+            description: "Fortified architecture with top-tier encryption and continuous vulnerability monitoring.",
             stat: "100%",
-            statLabel: "Secure Projects",
-            gradient: "from-green-500 to-emerald-500"
+            statLabel: "Data Integrity",
+            gradient: "from-deep-blue to-navy"
         },
         {
-            icon: Users,
-            title: "Dedicated Support",
-            description: "24/7 support team ready to assist you. We're committed to your success beyond project delivery.",
-            stat: "24/7",
-            statLabel: "Support Available",
-            gradient: "from-blue-500 to-cyan-500"
-        },
-
-        {
-            icon: CheckCircle2,
-            title: "Quality Assurance",
-            description: "Rigorous testing and quality checks ensure your website performs flawlessly across all devices and browsers.",
-            stat: "99.9%",
-            statLabel: "Uptime Guarantee",
-            gradient: "from-indigo-500 to-violet-500"
-        },
-        {
-            icon: Shield,
-            title: "Scalability",
-            description: "We deliver scalable solutions that grow with you",
-            stat: "100%",
-            statLabel: "Secure Projects",
-            gradient: "from-green-500 to-emerald-500"
+            icon: Award,
+            title: "Expert Craftsmanship",
+            description: "Our solutions are precision-engineered by senior developers with a focus on code quality.",
+            stat: "10+",
+            statLabel: "Years Experience",
+            gradient: "from-royal-blue to-deep-blue"
         },
     ];
 
     return (
-        <section id="why-us" className="py-20 md:py-28 bg-gradient-to-b from-background to-muted/20">
-            <div className="container max-w-screen-2xl px-4 md:px-8">
-                {/* Header */}
-                <div className="text-center mb-16 md:mb-20">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                        Why Choose <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Lintech</span>?
-                    </h2>
-                    <p className="text-muted-foreground text-base md:text-lg lg:text-xl max-w-2xl mx-auto">
-                        We combine technical excellence with creative innovation to deliver web solutions that drive real business results.
-                    </p>
-                </div>
+        <section id="why-us" className="py-24 bg-navy relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(201,168,76,0.05)_0%,transparent_50%)]"></div>
+            
+            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
+                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                    <div className="space-y-8">
+                        <div className="space-y-4">
+                            <h2 className="text-4xl md:text-6xl font-bold text-mist-white leading-tight">
+                                Why Visionary Brands <br />
+                                <span className="text-gradient-gold">Choose Us</span>
+                            </h2>
+                            <p className="text-mist-white/60 text-lg max-w-lg leading-relaxed">
+                                We don't just build websites; we architect digital ecosystems that power global businesses.
+                            </p>
+                        </div>
 
-                {/* Reasons Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    {reasons.map((reason, index) => {
-                        const Icon = reason.icon;
-                        return (
-                            <div
-                                key={index}
-                                className="group relative bg-card border border-border rounded-2xl p-6 md:p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 text-center"
-                            >
-                                {/* Icon with gradient background */}
-                                <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${reason.gradient} mb-4`}>
-                                    <Icon className="w-6 h-6 text-white" />
-                                </div>
-
-                                {/* Title */}
-                                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                                    {reason.title}
-                                </h3>
-
-                                {/* Description */}
-                                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                                    {reason.description}
-                                </p>
-                                {/* Hover effect overlay */}
-                                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                        <div className="grid sm:grid-cols-2 gap-8 pt-4">
+                            <div className="space-y-2">
+                                <div className="text-4xl font-bold text-gold">99.9%</div>
+                                <div className="text-sm font-semibold uppercase tracking-widest text-mist-white/40">Uptime Reliability</div>
                             </div>
-                        );
-                    })}
+                            {/* <div className="space-y-2">
+                                <div className="text-4xl font-bold text-gold">150+</div>
+                                <div className="text-sm font-semibold uppercase tracking-widest text-mist-white/40">Projects Delivered</div>
+                            </div> */}
+                        </div>
+                    </div>
+
+                    <div className="grid gap-6">
+                        {reasons.map((reason, index) => {
+                            const Icon = reason.icon;
+                            return (
+                                <div
+                                    key={index}
+                                    className="group glass-dark p-8 rounded-2xl border-white/5 hover:border-gold/30 transition-all duration-500 flex gap-6 items-start"
+                                >
+                                    <div className="p-4 rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 group-hover:border-gold/50 transition-colors">
+                                        <Icon className="w-6 h-6 text-gold" />
+                                    </div>
+                                    <div className="space-y-2">
+                                        <h3 className="text-xl font-bold text-mist-white">{reason.title}</h3>
+                                        <p className="text-mist-white/50 text-sm leading-relaxed">{reason.description}</p>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
     );
 }
+
