@@ -21,7 +21,7 @@ export function Navbar() {
                     <div className="relative w-10 h-10 overflow-hidden rounded-xl bg-navy flex items-center justify-center border border-gold/30 group-hover:border-gold transition-colors">
                         <Image src="/logo.png" alt="Logo" width={32} height={32} className="object-contain" />
                     </div>
-                    <span className="font-bold text-navy tracking-tight text-lg hidden sm:block">Lintech</span>
+                    <span className="font-bold text-navy tracking-tight text-lg">Lintech</span>
                 </Link>
 
                 {/* Desktop Navigation */}

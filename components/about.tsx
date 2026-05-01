@@ -29,7 +29,7 @@ export function About() {
     return (
         <section
             id="about"
-            className="relative py-24 mddden
+            className="relative py-16 md:py-24 lg:py-36 overflow-hidden bg-navy"
         >
             {/* Sapphire Decorations */}
             <div className="absolute -top-24 -left-24 w-96 h-96 bg-deep-blue/20 rounded-full blur-[120px] pointer-events-none"></div>
