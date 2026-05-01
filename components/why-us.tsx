@@ -64,7 +64,7 @@ export function WhyUs() {
                             return (
                                 <div
                                     key={index}
-                                    className="group gassspd8 kopd8te/5 hover:brborgerdwhite/530 transition-golda3ion-500 flex gap-6 items-s5artflgp6 tessa
+                                    className="group glass-dark p-8 rounded-2xl border-white/5 hover:border-gold/30 transition-all duration-500 flex gap-6 items-start"
                                 >
                                     <div className="p-4 rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 group-hover:border-gold/50 transition-colors">
                                         <Icon className="w-6 h-6 text-gold" />
