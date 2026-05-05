@@ -24,7 +24,11 @@ export const metadata: Metadata = {
     "ecommerce website design kenya",
     "mobile app development kenya",
     "software development company nairobi",
-    "Lintech Web Solutions"
+    "Lintech Web Solutions",
+    "Daisy Oduor",
+    "Daisy Achieng Oduor",
+    "Daisy Oduor Web Development",
+
   ],
   authors: [{ name: "Lintech Web Solutions" }],
   creator: "Lintech Web Solutions",
