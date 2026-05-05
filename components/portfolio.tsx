@@ -75,7 +75,7 @@ export default function Portfolio() {
                             <Award className="w-3.5 h-3.5" />
                             <span>Our Work</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-navy">
+                        <h2 className="text-4xl md:text-5xl font-bold text-navy text-center">
                             Selected <span className="text-gradient-gold">Works</span>
                         </h2>
                     </div>
@@ -144,18 +144,14 @@ export default function Portfolio() {
                                 </div>
                             </div>
 
-                            <div className="mt-4 md:mt-6 flex justify-between items-start gap-4">
+                            <div className="mt-4 md:mt-6 flex flex-col sm:flex-row justify-between items-start gap-4">
                                 <div className="space-y-1">
                                     <h3 className="text-2xl font-bold text-navy group-hover:text-deep-blue transition-colors">{project.title}</h3>
-                                    <div className="flex gap-2">
-                                        {project.tech.map(t => (
-                                            <span key={t} className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{t}</span>
-                                        ))}
-                                    </div>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
                                 </div>
-                                <Button variant="ghost" size="icon" asChild className="rounded-full hover:bg-gold/10 hover:text-gold transition-all group-hover:translate-x-1 group-hover:-translate-y-1">
+                                <Button variant="gold" size="sm" asChild className="rounded-full gap-2 shadow-lg shadow-gold/20">
                                     <a href={project.url} target="_blank" rel="noopener noreferrer">
-                                        <ExternalLink className="w-5 h-5" />
+                                        View Live <ExternalLink className="w-4 h-4" />
                                     </a>
                                 </Button>
                             </div>

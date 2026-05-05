@@ -47,7 +47,7 @@ export function Contact() {
                         </div>
                     </div>
 
-                    <div className="glass-dark p-6 md:p-8 lg:p-12 rounded-[1.5rem] md:rounded-[2rem] border-white/10 shadow-2xl">
+                    <div className="bg-navy p-6 md:p-8 lg:p-12 rounded-[1.5rem] md:rounded-[2rem] border-white/10 shadow-2xl">
                         <form className="space-y-6">
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div className="space-y-2">

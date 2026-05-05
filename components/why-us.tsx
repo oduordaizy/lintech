@@ -38,23 +38,11 @@ export function WhyUs() {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h2 className="text-4xl md:text-6xl font-bold text-navy leading-tight">
-                                Why Visionary Brands <br />
-                                <span className="text-gradient-gold">Choose Us</span>
+                                Why Lintech Web Solutions? <br />
                             </h2>
                             <p className="text-navy/60 text-lg max-w-lg leading-relaxed">
                                 We don't just build websites; we architect digital ecosystems that power global businesses.
                             </p>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                            <div className="space-y-2">
-                                <div className="text-4xl font-bold text-gold">99.9%</div>
-                                <div className="text-sm font-semibold uppercase tracking-widest text-navy/40">Uptime Reliability</div>
-                            </div>
-                            {/* <div className="space-y-2">
-                                <div className="text-4xl font-bold text-gold">150+</div>
-                                <div className="text-sm font-semibold uppercase tracking-widest text-mist-white/40">Projects Delivered</div>
-                            </div> */}
                         </div>
                     </div>
 
@@ -64,14 +52,14 @@ export function WhyUs() {
                             return (
                                 <div
                                     key={index}
-                                    className="group glass-dark p-8 rounded-2xl border-white/5 hover:border-gold/30 transition-all duration-500 flex gap-6 items-start"
+                                    className="group bg-navy p-8 rounded-2xl border-white/5 hover:border-gold/30 transition-all duration-500 flex gap-6 items-start"
                                 >
                                     <div className="p-4 rounded-xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 group-hover:border-gold/50 transition-colors">
                                         <Icon className="w-6 h-6 text-gold" />
                                     </div>
                                     <div className="space-y-2">
-                                        <h3 className="text-xl font-bold text-navy">{reason.title}</h3>
-                                        <p className="text-navy/50 text-sm leading-relaxed">{reason.description}</p>
+                                        <h3 className="text-xl font-bold text-white">{reason.title}</h3>
+                                        <p className="text-gray-400 text-sm leading-relaxed">{reason.description}</p>
                                     </div>
                                 </div>
                             );
