@@ -11,7 +11,7 @@ export function Navbar() {
         { href: "/services", label: "Services" },
         { href: "/projects", label: "Projects" },
         { href: "/pricing", label: "Pricing" },
-        { href: "/contact", label: "Contact" },
+        // { href: "/contact", label: "Contact" },
     ]
 
     return (
@@ -36,8 +36,8 @@ export function Navbar() {
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all group-hover:w-full"></span>
                         </Link>
                     ))}
-                    <Button size="sm" variant="gold" className="rounded-full shadow-gold/20">
-                        Get Started
+                    <Button size="sm" variant="gold" className="rounded-full shadow-gold/20" asChild>
+                        <Link href="/contact">Contact Us</Link>
                     </Button>
                 </div>
 

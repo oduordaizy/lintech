@@ -16,7 +16,7 @@ const projects = [
         url: "https://itravas.com",
     },
     {
-        title: "Avoworld Africa Limited Website",
+        title: "Avoworld Africa Website",
         description: "A website for a Avocado logistics and transportation company",
         category: "Web Development",
         imageUrl: "/projects/avoworld.jpg",
