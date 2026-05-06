@@ -39,9 +39,9 @@ export default function PricingComponent() {
             price: "80,000",
             features: [
                 "Everything in Business",
-                "Full E-commerce Store (Unlimited Products)",
+                "Full E-commerce Store",
                 "M-Pesa & Card Payments Integration",
-                "Advanced Marketing & Automation Tools",
+                "Advanced Automation Tools",
                 "CRM Integration & Customer Management",
                 "Premium Security & Backup System",
                 "1 Year Priority Support"
@@ -58,7 +58,7 @@ export default function PricingComponent() {
                 <div className="max-w-7xl mx-auto">
                     {/* Header */}
                     <div className="text-center mb-16 md:mb-20">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
                             Simple, Transparent Pricing
                         </h1>
                         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
