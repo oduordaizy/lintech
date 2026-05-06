@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import Link from 'next/link';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 
@@ -112,14 +113,15 @@ export default function PricingComponent() {
                                     </ul>
 
                                     {/* CTA Button */}
-                                    <button
-                                        className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-300 ${plan.popular
+                                    <a
+                                        href="/contact"
+                                        className={`w-full py-4 px-6 rounded-xl font-semibold transition-all duration-300 text-center block ${plan.popular
                                             ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-lg hover:shadow-xl'
                                             : 'bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 hover:from-blue-100 hover:to-indigo-100 border border-blue-200'
                                             }`}
                                     >
-                                        Get Quote
-                                    </button>
+                                        Contact Us
+                                    </a>
                                 </div>
                             </div>
                         ))}

@@ -7,7 +7,7 @@ import { ExternalLink, Award, Eye, ChevronDown, ChevronUp } from "lucide-react"
 const projects = [
     {
         title: "iTravas",
-        description: "A travel booking platform that allows for ridesharing",
+        description: "A modern ridesharing platform connecting drivers with empty seats to passengers seeking affordable, secure, and convenient travel across Kenya.",
         category: "Web Development",
         imageUrl: "/projects/itravas.jpg",
         gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
@@ -16,7 +16,7 @@ const projects = [
         url: "https://itravas.com",
     },
     {
-        title: "Avoworld Website",
+        title: "Avoworld Africa Limited Website",
         description: "A website for a Avocado logistics and transportation company",
         category: "Web Development",
         imageUrl: "/projects/avoworld.jpg",
