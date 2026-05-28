@@ -34,8 +34,8 @@ export default function Hero() {
                             </a>
                         </Button>
                         <Button size="lg" variant="outline" className="border-navy/10 text-navy hover:bg-navy/5 hover:border-navy/20 shadow-xl shadow-navy/5" asChild>
-                            <a href="#portfolio">
-                                View Portfolio
+                            <a href="/projects">
+                                View Projects
                             </a>
                         </Button>
                     </div>
@@ -53,7 +53,7 @@ export default function Hero() {
                             priority
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-60"></div>
-                        
+
                         {/* Floating Tech Badges */}
                         <div className="absolute bottom-3 sm:bottom-4 md:bottom-8 left-3 sm:left-4 md:left-8 right-3 sm:right-4 md:right-8 flex flex-wrap gap-1.5 sm:gap-2 md:gap-3">
                             {['Innovation', 'Performance', 'Security'].map((tag) => (
