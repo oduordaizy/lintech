@@ -25,6 +25,16 @@ const projects = [
         stats: { views: "8.5K", conversion: "4.1%" },
         url: "https://avoworldafrica.co.ke/",
     },
+    {
+        title: "Afritox Mobile Lab",
+        description: "A mobile laboratory for medical testing in Kenya.",
+        category: "Web Development",
+        imageUrl: "/projects/afritox.png",
+        gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
+        tech: ["React", "D3.js", "Django"],
+        stats: { views: "8.5K", conversion: "4.1%" },
+        url: "http://187.127.229.137:3005",
+    },
     // {
     //     title: "Demeters' Gardens Website",
     //     description: "Full-featured online store with Stripe payment integration, inventory management, and real-time order tracking.",
