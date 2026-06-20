@@ -152,9 +152,7 @@ export function About() {
                         {/* Right: Content */}
                         <div className="space-y-12">
                             <div className="space-y-6">
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gold text-xs font-bold uppercase tracking-widest">
-                                    <span>Corporate Excellence</span>
-                                </div>
+                                
                                 <h2 className="text-4xl md:text-5xl font-bold text-mist-white leading-tight">
                                     We Are Digital <br />
                                     <span className="text-gradient-gold">Visionaries</span>
@@ -190,19 +188,8 @@ export function About() {
                 </div>
             </section>
 
-            {/* Stats Section */}
-            <section className="py-16 md:py-24 bg-mist-white">
-                <div className="container max-w-screen-xl px-6 md:px-12 mx-auto">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {stats.map((stat, index) => (
-                            <div key={index} className="text-center">
-                                <div className="text-4xl md:text-5xl font-bold text-navy mb-2">{stat.value}</div>
-                                <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+         
+           
 
             {/* Mission, Vision & Values */}
             <section className="py-16 md:py-24 bg-navy">
@@ -261,37 +248,7 @@ export function About() {
                 </div>
             </section>
 
-            {/* Team Section */}
-            <section className="py-16 md:py-24 bg-navy">
-                <div className="container max-w-screen-xl px-6 md:px-12 mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-mist-white mb-4">
-                            Meet Our <span className="text-gradient-gold">Team</span>
-                        </h2>
-                        <p className="text-mist-white/60 max-w-2xl mx-auto">
-                            The talented individuals behind our success
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {team.map((member, index) => (
-                            <div key={index} className="group">
-                                <div className="relative aspect-square rounded-2xl overflow-hidden bg-white/5 border border-white/10 mb-4">
-                                    <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
-                                    <div className="absolute bottom-4 left-4 right-4">
-                                        <Badge variant="gold" className="text-xs">
-                                            {member.expertise}
-                                        </Badge>
-                                    </div>
-                                </div>
-                                <h3 className="text-lg font-bold text-mist-white">{member.name}</h3>
-                                <p className="text-mist-white/60 text-sm">{member.role}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
+           
             {/* Testimonials */}
             <section className="py-16 md:py-24 bg-mist-white">
                 <div className="container max-w-screen-xl px-6 md:px-12 mx-auto">
