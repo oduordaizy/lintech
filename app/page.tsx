@@ -22,7 +22,6 @@ export default function Home() {
       <Features />
       <WhyUs />
       <Portfolio />
-      <About />
       <Faq />
       <Contact />
       <Footer />
