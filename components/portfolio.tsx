@@ -48,7 +48,7 @@ const projects = [
         gradient: "bg-gradient-to-b from-amber-500 via-orange-600 to-red-700",
         tech: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
         stats: { views: "15K", conversion: "7.8%" },
-        url: "http://187.127.229.137:5006/",
+        url: "https://eliteafricafa.com",
         year: "2026",
     },
     /*
