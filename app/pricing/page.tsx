@@ -9,7 +9,7 @@ export default function PricingComponent() {
         {
             name: "Starter Website",
             description: "Ideal for small businesses or personal websites.",
-            price: "25,000",
+            price: "20,000",
             features: [
                 "5 Page Custom Website (Home, About, Services, Blog, Contact)",
                 "Mobile Responsive Design",
