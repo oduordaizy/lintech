@@ -35,7 +35,7 @@ export function Footer() {
                     <div>
                         <h3 className="font-bold text-gold uppercase tracking-widest text-xs mb-8">Navigation</h3>
                         <ul className="space-y-4">
-                            {['Home', 'About', 'Services', 'Projects', 'Pricing', 'Contact'].map(link => (
+                            {['Home', 'About', 'Services', 'Projects', 'Contact'].map(link => (
                                 <li key={link}>
                                     <Link href={`/${link === 'Home' ? '' : link.toLowerCase()}`} className="text-mist-white/60 hover:text-gold transition-colors text-sm font-medium">
                                         {link}

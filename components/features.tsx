@@ -49,58 +49,66 @@ export const services = [
 
 export default function Features() {
     return (
-        <section id="services" className="py-16 md:py-24 bg-navy relative overflow-hidden">
-            {/* Sapphire Mist Background Decorations */}
-            <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[radial-gradient(circle_at_80%_20%,rgba(26,74,138,0.15)_0%,transparent_70%)]"></div>
-            
+        <section id="services" className="py-16 md:py-24 bg-mist-white relative overflow-hidden">
+            {/* Soft Ambient Background Decor */}
+            <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[radial-gradient(circle_at_80%_20%,rgba(26,74,138,0.08)_0%,transparent_70%)] pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[radial-gradient(circle_at_20%_80%,rgba(201,168,76,0.1)_0%,transparent_70%)] pointer-events-none"></div>
+
             <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
+                {/* Section Header */}
                 <div className="text-center mb-12 md:mb-20 space-y-4">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gold text-xs font-bold uppercase tracking-widest">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy/5 border border-navy/10 text-navy text-xs font-bold uppercase tracking-widest">
                         <span>Our Expertise</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-mist-white">
-                        World-Class <span className="text-gradient-gold">Solutions</span>
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-navy">
+                        World-Class <span className="text-royal-blue">Solutions</span>
                     </h2>
-                    <p className="text-mist-white/60 text-lg max-w-2xl mx-auto">
+                    <p className="text-navy/70 text-lg max-w-2xl mx-auto font-medium">
                         Precision-engineered digital ecosystems designed to elevate your brand and drive exponential growth.
                     </p>
                 </div>
 
+                {/* Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group relative glass-dark rounded-[2rem] border-white/5 hover:border-gold/30 transition-all duration-500 hover:shadow-2xl hover:shadow-gold/10 overflow-hidden"
+                            className="group relative bg-white rounded-[2rem] border border-navy/10 hover:border-gold/50 transition-all duration-500 shadow-lg shadow-navy/5 hover:shadow-2xl hover:shadow-royal-blue/10 overflow-hidden flex flex-col justify-between"
                         >
-                            <div className="relative h-48 md:h-56 overflow-hidden">
-                                <Image
-                                    src={service.image}
-                                    alt={service.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-60 group-hover:opacity-80"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/40 to-transparent"></div>
-                                <div className="absolute bottom-6 left-6">
-                                    <div className="p-3 rounded-2xl bg-gold text-navy shadow-xl shadow-gold/20 scale-90 group-hover:scale-100 transition-transform duration-500">
-                                        <service.icon className="w-6 h-6" />
+                            <div>
+                                {/* Image & Icon Overlay */}
+                                <div className="relative h-48 md:h-56 overflow-hidden bg-navy/5">
+                                    <Image
+                                        src={service.image}
+                                        alt={service.title}
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                                    />
+                                    {/* Light gradient overlay on top of image for readability */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
+                                    
+                                    {/* Floating Icon Badge */}
+                                    <div className="absolute bottom-4 left-6">
+                                        <div className="p-3 rounded-2xl bg-navy text-gold shadow-md shadow-navy/20 group-hover:bg-gold group-hover:text-navy group-hover:scale-110 transition-all duration-500">
+                                            <service.icon className="w-6 h-6" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="p-6 md:p-8 space-y-4">
-                                <h3 className="text-2xl font-bold text-mist-white group-hover:text-gold transition-colors">
-                                    {service.title}
-                                </h3>
-                                <p className="text-mist-white/50 text-sm leading-relaxed">
-                                    {service.description}
-                                </p>
-                                
-                                <div className="pt-4 flex items-center text-gold text-xs font-bold uppercase tracking-widest gap-2 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
-                                    Explore Service <ArrowRight className="w-4 h-4" />
+                                {/* Content */}
+                                <div className="p-6 md:p-8 space-y-3">
+                                    <h3 className="text-2xl font-bold text-navy group-hover:text-royal-blue transition-colors">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-navy/70 text-sm leading-relaxed">
+                                        {service.description}
+                                    </p>
                                 </div>
                             </div>
+                           
 
-                            <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-gold via-deep-blue to-gold w-0 group-hover:w-full transition-all duration-700"></div>
+                            {/* Hover Accent Line */}
+                            <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-gold via-royal-blue to-gold w-0 group-hover:w-full transition-all duration-700"></div>
                         </div>
                     ))}
                 </div>
@@ -108,4 +116,3 @@ export default function Features() {
         </section>
     )
 }
-
