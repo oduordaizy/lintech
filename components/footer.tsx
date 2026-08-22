@@ -60,7 +60,7 @@ export function Footer() {
 
                     {/* Newsletter/Contact */}
                     <div className="space-y-6">
-                        <h3 className="font-bold text-gold uppercase tracking-widest text-xs mb-8">Connect</h3>
+                        <h3 className="font-bold text-gold uppercase tracking-widest text-xs mb-8">Contact</h3>
                         <div className="space-y-4">
                             <div className="flex items-center gap-3">
                                 <Mail className="w-4 h-4 text-gold" />
