@@ -125,73 +125,43 @@ export function About() {
 
     return (
         <>
-            {/* Hero Section */}
-            <section
-                id="about"
-                className="relative py-16 md:py-24 lg:py-36 overflow-hidden bg-navy"
-            >
-                {/* Sapphire Decorations */}
-                <div className="absolute -top-24 -left-24 w-96 h-96 bg-deep-blue/20 rounded-full blur-[120px] pointer-events-none"></div>
-                
-                <div className="container max-w-screen-xl px-6 md:px-12 mx-auto relative z-10">
-                    <div className="grid lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-24 items-center">
-                        
-                        {/* Left: Image + Experience Card */}
-                        <div className="relative">
-                            <div className="relative aspect-[4/5] md:aspect-[3/4] lg:aspect-[4/5] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-2xl border border-white/5">
-                                <Image
-                                    src="/ab.png"
-                                    alt="Lintech team"
-                                    fill
-                                    className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+            
+            {/* Mission & Vision */}
+            <section className="py-10 md:py-24 bg-mist-white relative">
+                <div className="container max-w-screen-xl px-6 md:px-12 mx-auto">
+                    <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+                        {/* Mission */}
+                        <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-navy/5 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110 duration-500"></div>
+                            <div className="relative z-10">
+                                <div className="w-14 h-14 rounded-2xl bg-navy flex items-center justify-center mb-8 shadow-lg">
+                                    <Target className="w-7 h-7 text-gold" />
+                                </div>
+                                <h3 className="text-3xl font-bold text-navy mb-6">Our <span className="text-royal-blue">Mission</span></h3>
+                                <p className="text-muted-foreground text-lg leading-relaxed">
+                                    To architect scalable, high-performance digital ecosystems that empower global enterprises to achieve their long-term business goals with technical rigor and refined design.
+                                </p>
                             </div>
                         </div>
 
-                        {/* Right: Content */}
-                        <div className="space-y-12">
-                            <div className="space-y-6">
-                                
-                                <h2 className="text-4xl md:text-5xl font-bold text-mist-white leading-tight">
-                                    We Are Digital <br />
-                                    <span className="text-gradient-gold">Visionaries</span>
-                                </h2>
-                                <p className="text-mist-white/60 text-lg leading-relaxed max-w-lg">
-                                    At Lintech, we architect high-performance digital ecosystems for global enterprises. We combine technical rigor with refined design to deliver trust and depth.
+                        {/* Vision */}
+                        <div className="bg-navy rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-deep-blue/40 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110 duration-500"></div>
+                            <div className="relative z-10">
+                                <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center mb-8 border border-white/20 shadow-lg">
+                                    <Star className="w-7 h-7 text-gold" />
+                                </div>
+                                <h3 className="text-3xl font-bold text-mist-white mb-6">Our <span className="text-gradient-gold">Vision</span></h3>
+                                <p className="text-mist-white/70 text-lg leading-relaxed">
+                                    To be the premier strategic partner in digital architecture, recognized globally for excellence, innovation, and transforming complex challenges into seamless experiences.
                                 </p>
-                            </div>
-
-                            {/* Pillars */}
-                            <div className="grid gap-4 md:gap-6">
-                                {pillars.map((p) => (
-                                    <div key={p.number} className="group flex gap-4 md:gap-6 p-4 md:p-6 rounded-xl md:rounded-2xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10">
-                                        <span className="text-xl font-bold text-gold opacity-30 group-hover:opacity-100 transition-opacity">{p.number}</span>
-                                        <div className="space-y-1">
-                                            <h3 className="font-bold text-mist-white text-lg">{p.title}</h3>
-                                            <p className="text-mist-white/40 text-sm leading-relaxed">{p.body}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className="flex items-center gap-4 md:gap-6 pt-4">
-                                <Button size="lg" variant="gold" className="rounded-full shadow-lg shadow-gold/20">
-                                    Meet Our Experts
-                                </Button>
-                                <Button variant="link" className="font-bold text-mist-white hover:text-gold group">
-                                    Learn More <span className="group-hover:translate-x-1 transition-transform ml-2">→</span>
-                                </Button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-         
-           
-
-            {/* Mission, Vision & Values */}
+            {/* Core Values */}
             <section className="py-16 md:py-24 bg-navy">
                 <div className="container max-w-screen-xl px-6 md:px-12 mx-auto">
                     <div className="text-center mb-16">
