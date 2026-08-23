@@ -10,7 +10,7 @@ const projects = [
         title: "iTravas",
         description: "A modern ridesharing platform connecting drivers with empty seats to passengers seeking affordable, secure, and convenient travel across Kenya. Features real-time tracking, secure payments, and driver verification.",
         category: "Web Development",
-        imageUrl: "/projects/itravas.jpg",
+        imageUrl: "/projects/itravas.png",
         gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
         tech: ["React", "Django", "PostgreSQL"],
         stats: { views: "8.5K", conversion: "4.1%" },
