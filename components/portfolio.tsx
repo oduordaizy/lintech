@@ -42,7 +42,7 @@ const projects = [
     },
     {
         title: "Elite Africa Football Academy",
-        description: "A Informational website for a modern football academy website that includes a blog for news and updates.",
+        description: "An Informational website for a modern football academy website that includes a blog for news and updates.",
         category: "Web Development",
         imageUrl: "/projects/eafa.jpg",
         gradient: "bg-gradient-to-b from-amber-500 via-orange-600 to-red-700",
@@ -51,18 +51,18 @@ const projects = [
         url: "https://eliteafricafa.com",
         year: "2026",
     },
-    /*
     {
-        title: "Medicare Healthcare Platform",
-        description: "Modern, accessible healthcare platform with patient portals, appointment booking, and HIPAA-compliant secure messaging. Features telemedicine integration and prescription management.",
-        category: "W",
-        imageUrl: "/projects/medicare.jpg",
+        title: "Portfolio Website",
+        description: "My personal portfolio website to showcase my projects and skills.",
+        category: "Web Development",
+        imageUrl: "/projects/portfolio.png",
         gradient: "bg-gradient-to-b from-blue-600 via-indigo-700 to-purple-700",
-        tech: ["WordPress", "HIPAA", "SEO", "Twilio"],
+        tech: ["Next.js", "TypeScript", "Tailwind CSS"],
         stats: { views: "15K", conversion: "5.8%" },
-        url: "https://lintechwebsolutions.co.ke",
+        url: "https://portfolio-seven-pied-37.vercel.app/",
         year: "2023",
     },
+    /*
     {
         title: "EduLearn Learning Management",
         description: "Comprehensive LMS for educational institutions with course management, student progress tracking, interactive quizzes, and video conferencing integration for remote learning.",
@@ -152,24 +152,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Stats Overview */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                    <div className="bg-white rounded-xl p-6 border border-navy/5 shadow-sm text-center">
-                        <div className="text-3xl font-bold text-navy mb-1">8+</div>
-                        <div className="text-sm text-muted-foreground">Projects Delivered</div>
-                    </div>
-                    <div className="bg-white rounded-xl p-6 border border-navy/5 shadow-sm text-center">
-                        <div className="text-3xl font-bold text-navy mb-1">6</div>
-                        <div className="text-sm text-muted-foreground">Industries Served</div>
-                    </div>
-                    <div className="bg-white rounded-xl p-6 border border-navy/5 shadow-sm text-center">
-                        <div className="text-3xl font-bold text-navy mb-1">95%</div>
-                        <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-                    </div>
-                    <div className="bg-white rounded-xl p-6 border border-navy/5 shadow-sm text-center">
-                        <div className="text-3xl font-bold text-navy mb-1">24/7</div>
-                        <div className="text-sm text-muted-foreground">Support Available</div>
-                    </div>
-                </div>
+                
 
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -259,19 +242,7 @@ export default function Portfolio() {
                                             {tech}
                                         </Badge>
                                     ))}
-                                </div>
-
-                                {/* Stats */}
-                                <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                                    <div className="flex items-center gap-1">
-                                        <Eye className="w-3 h-3" />
-                                        {project.stats.views}
-                                    </div>
-                                    <div className="flex items-center gap-1">
-                                        <Award className="w-3 h-3" />
-                                        {project.stats.conversion} conversion
-                                    </div>
-                                </div>
+                                </div>                                
 
                                 <Button variant="gold" size="sm" asChild className="rounded-full gap-2 shadow-lg shadow-gold/20 w-full">
                                     <a href={project.url} target="_blank" rel="noopener noreferrer">
