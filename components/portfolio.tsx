@@ -62,14 +62,14 @@ const projects = [
         url: "https://portfolio-seven-pied-37.vercel.app/",
         year: "2023",
     },
-    /*
+    
     {
-        title: "EduLearn Learning Management",
-        description: "Comprehensive LMS for educational institutions with course management, student progress tracking, interactive quizzes, and video conferencing integration for remote learning.",
-        category: "Education",
-        imageUrl: "/projects/edulearn.jpg",
+        title: "Lakeview German School Website",
+        description: "An informational website for Lakeview German School",
+        category: "Web Development",
+        imageUrl: "/projects/lakeview.jpg",
         gradient: "bg-gradient-to-b from-violet-500 via-purple-600 to-indigo-700",
-        tech: ["React", "Python", "Django", "WebRTC"],
+        tech: ["Next js"],
         stats: { views: "9.3K", conversion: "11.2%" },
         url: "#",
         year: "2024",
