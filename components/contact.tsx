@@ -9,7 +9,7 @@ export function Contact() {
             {/* Decorative background element */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-navy hidden lg:block -skew-x-6 translate-x-12"></div>
             
-            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
+            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10 mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div className="space-y-10">
                         <div className="space-y-4">

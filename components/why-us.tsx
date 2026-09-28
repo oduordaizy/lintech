@@ -33,7 +33,7 @@ export function WhyUs() {
             {/* Background pattern */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(201,168,76,0.05)_0%,transparent_50%)]"></div>
             
-            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
+            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10 mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div className="space-y-8">
                         <div className="space-y-4">

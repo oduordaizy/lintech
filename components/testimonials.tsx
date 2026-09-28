@@ -28,7 +28,7 @@ export function Testimonials() {
         <section id="testimonials" className="py-24 bg-navy relative overflow-hidden">
             <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_20%_80%,rgba(65,105,225,0.1)_0%,transparent_50%)]"></div>
             
-            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
+            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10 mx-auto">
                 <div className="text-center mb-20 space-y-4">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-deep-blue/20 border border-deep-blue/30 text-gold text-xs font-bold uppercase tracking-widest">
                         <span>Success Stories</span>

@@ -9,7 +9,7 @@ export function Footer() {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold via-deep-blue to-gold"></div>
             <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-gold/5 rounded-full blur-[100px] pointer-events-none"></div>
 
-            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
+            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10 mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
                     {/* Brand Column */}
                     <div className="space-y-4 md:space-y-6 lg:col-span-1">

@@ -54,7 +54,7 @@ export default function Features() {
             <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[radial-gradient(circle_at_80%_20%,rgba(26,74,138,0.08)_0%,transparent_70%)] pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-[radial-gradient(circle_at_20%_80%,rgba(201,168,76,0.1)_0%,transparent_70%)] pointer-events-none"></div>
 
-            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10">
+            <div className="container max-w-screen-2xl px-4 md:px-8 relative z-10 mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-20 space-y-4">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy/5 border border-navy/10 text-navy text-xs font-bold uppercase tracking-widest">

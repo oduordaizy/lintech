@@ -125,7 +125,7 @@ export default function Portfolio() {
 
     return (
         <section id="portfolio" className="py-16 md:py-24 bg-mist-white relative">
-            <div className="container max-w-screen-2xl px-4 md:px-8">
+            <div className="container max-w-screen-2xl px-4 md:px-8 mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
