@@ -59,7 +59,7 @@ const projects = [
         gradient: "bg-gradient-to-b from-blue-600 via-indigo-700 to-purple-700",
         tech: ["Next.js", "TypeScript", "Tailwind CSS"],
         stats: { views: "15K", conversion: "5.8%" },
-        url: "https://portfolio-seven-pied-37.vercel.app/",
+        url: "https://daisyoduor.vercel.app",
         year: "2023",
     },
     
@@ -71,7 +71,7 @@ const projects = [
         gradient: "bg-gradient-to-b from-violet-500 via-purple-600 to-indigo-700",
         tech: ["Next js"],
         stats: { views: "9.3K", conversion: "11.2%" },
-        url: "#",
+        url: "https://lakeviewgermanschool.com",
         year: "2024",
     },
     /*{
